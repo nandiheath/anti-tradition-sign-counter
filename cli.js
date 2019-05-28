@@ -24,8 +24,13 @@ program.command('gen_list').action(async () => {
     if (text.match(/.*http(s){0,1}:\/\//g)) {
       const [name, url] = text.split('http');
       fsContent.list.push({
+        index: fsContent.list.length,
         name,
-        url: `http${url}`
+        url: `http${url}`,
+        parseConfig: {
+          type: 'regex',
+          argv: '人數\\D*\(\\d+)'
+        }
       })
     }
   })
@@ -57,34 +62,74 @@ function getDownloadFunc() {
  */
 function readDataFromLocal(dir) {
   const ls = fs.readdirSync(dir);
-  // for (const fname of ls) {
-    fname = ls[66];
+  for (const fname of ls) {
     console.log(fname);
     const file = path.join(dir, fname);
     const content = fs.readFileSync(file).toString();
-    const match = content.match(/人數[^\n<br>]*(:|：)[^\n<br>\\]*\d+/g);
+    const match = content.match();
     console.log(match);
-  // }
-
+  }
 }
 
 /**
  *
  */
-function getCountFunc() {
+function getCountFunc(index) {
   return async.asyncify(async (item, key) => {
+    if (index && index != key) {
+      return;
+    }
     try {
+      let content;
       const fname = `./data/download/${key}.html`;
-      const res = await request.getAsync(item.url);
-      const content = res.body;
-      const match = content.match(/人數[^\n<br>]*\d+/g);
-      if (match) {
-        // TODO:
-        const count = match[0]
-        console.log(`${item.name}: ${count}`);
+      if (fs.existsSync(fname)) {
+        content = fs.readFileSync(fname).toString();
       } else {
-        console.log(`${item.name}: unknown`);
+        const res = await request.getAsync(item.url);
+        content = res.body;
       }
+
+      const {
+        type, argv
+      } = item.parseConfig
+      if (type === 'regex') {
+        const regex = new RegExp(argv, 'g');
+        const match = regex.exec(content);
+        if (match) {
+          // TODO:
+          const count = parseInt(match[1], 10);
+          item.count = count;
+          console.log(`${item.name}: ${count}`);
+        } else {
+          console.log(`${item.name}: unknown`);
+        }
+      } else if (type === 'count') {
+        const regex = new RegExp(argv, 'g');
+        const match = content.match(regex);
+        if (match) {
+          console.log(match);
+          const count = match.length;
+          item.count = count;
+          console.log(`${item.name}: ${count}`);
+        } else {
+          console.log(`${item.name}: unknown`);
+        }
+      }  else if (type === 'numbered') {
+        const regex = new RegExp(argv, 'g');
+        let match;
+        let max = 0;
+        while (match = regex.exec(content)) {
+          max = Math.max(max, match [1]);
+        }
+        if (max) {
+          console.log(max);
+          item.count = max;
+          console.log(`${item.name}: ${max}`);
+        } else {
+          console.log(`${item.name}: unknown`);
+        }
+      }
+
     } catch (error) {
       console.error(`Error when fetching ${item.url}`);
       console.error(error.message);
@@ -98,6 +143,7 @@ program
   .option('-d, --download-only', 'Download all the html only')
   .option('-l, --local', 'parse the data from local')
   .option('-c, --count', 'display the number (if any)')
+  .option('-i, --index <index>', 'run the index only')
   .action(async (cmd) => {
 
     let list;
@@ -118,7 +164,8 @@ program
     } else if (cmd.local){
       await readDataFromLocal('./data/download');
     } else if (cmd.count) {
-      async.eachOfLimit(list, 20, getCountFunc(), (error) => {
+      async.eachOfLimit(list, 20, getCountFunc(cmd.index), (error) => {
+        fs.writeFileSync('./data/list.json', JSON.stringify({list: list}, null, 4));
       })
     }
 
