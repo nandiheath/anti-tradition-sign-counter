@@ -15,24 +15,24 @@ program.command('gen_list').action(async () => {
   const content = res.body;
   const $ = cheerio.load(content);
 
-  const list = $('div.entry-content').find("p");
+  const list = $('div.entry-content').find("p").find("a");
   const fsContent = {
     list: []
   };
+
   list.each((i, ele) => {
-    const text = $(ele).text();
-    if (text.match(/.*http(s){0,1}:\/\//g)) {
-      const [name, url] = text.split('http');
-      fsContent.list.push({
-        index: fsContent.list.length,
-        name,
-        url: `http${url}`,
-        parseConfig: {
-          type: 'regex',
-          argv: '人數\\D*\(\\d+)'
-        }
-      })
-    }
+    const name = $(ele).text();
+    const url = $(ele).attr('href');
+
+    fsContent.list.push({
+      index: fsContent.list.length,
+      name,
+      url,
+      parseConfig: {
+        type: 'regex',
+        argv: '人數\\D*\(\\d+)'
+      }
+    });
   })
 
   fs.writeFileSync('./data/list.json', JSON.stringify(fsContent, null, 2));
@@ -79,6 +79,7 @@ function getCountFunc(index) {
     if (index && index != key) {
       return;
     }
+
     try {
       let content;
       const fname = `./data/download/${key}.html`;
@@ -88,6 +89,11 @@ function getCountFunc(index) {
         const res = await request.getAsync(item.url);
         content = res.body;
       }
+
+      const matchTitle = content.match(/<title>(.*?)<\/title>/i);
+      if(matchTitle) {
+        item.name = matchTitle[1]
+      } 
 
       const {
         type, argv
