@@ -9,6 +9,7 @@ const path = require('path');
 
 
 const listSrc = 'https://samyip.net/2019/05/27/%E5%AD%B8%E7%95%8C%E5%8F%8A%E5%90%84%E7%95%8C-%E5%8F%8D%E9%80%81%E4%B8%AD%E8%81%AF%E7%BD%B2%E5%8F%8A%E9%97%9C%E6%B3%A8%E7%B5%84%E6%95%B4%E5%90%88/';
+const LIST_FILE_PATH = './data/list.json';
 
 program.command('gen_list').action(async () => {
   let res = await request.getAsync(listSrc);
@@ -16,23 +17,29 @@ program.command('gen_list').action(async () => {
   const $ = cheerio.load(content);
 
   const list = $('div.entry-content').find("p").find("a");
-  const fsContent = {
+  let fsContent = {
     list: []
   };
+
+  if (fs.existsSync(LIST_FILE_PATH)) {
+    fsContent = JSON.parse(fs.readFileSync(LIST_FILE_PATH).toString());
+  }
 
   list.each((i, ele) => {
     const name = $(ele).text();
     const url = $(ele).attr('href');
-
-    fsContent.list.push({
-      index: fsContent.list.length,
-      name,
-      url,
-      parseConfig: {
-        type: 'regex',
-        argv: '人數\\D*\(\\d+)'
-      }
-    });
+    const index = fsContent.list.length;
+    if (!fsContent.list.find(row => row.url === url)) {
+      fsContent.list.push({
+        index,
+        name,
+        url,
+        parseConfig: {
+          type: 'regex',
+          argv: '人數\\D*\(\\d+)'
+        }
+      });
+    }
   })
 
   fs.writeFileSync('./data/list.json', JSON.stringify(fsContent, null, 2));
@@ -57,24 +64,35 @@ function getDownloadFunc() {
   })
 }
 
-/**
- * Function used for debug
- */
-function readDataFromLocal(dir) {
-  const ls = fs.readdirSync(dir);
-  for (const fname of ls) {
-    console.log(fname);
-    const file = path.join(dir, fname);
-    const content = fs.readFileSync(file).toString();
-    const match = content.match();
-    console.log(match);
+
+function parseHtml(content, type, argv) {
+  const count = 0;
+  if (type === 'regex') {
+    const regex = new RegExp(argv, 'g');
+    const match = regex.exec(content);
+    if (match) {
+      count = parseInt(match[1], 10);
+    }
+  } else if (type === 'count') {
+    const regex = new RegExp(argv, 'g');
+    const match = content.match(regex);
+    count = match.length;
+  } else if (type === 'numbered') {
+    const regex = new RegExp(argv, 'g');
+    let match;
+    let max = 0;
+    while (match = regex.exec(content)) {
+      max = Math.max(max, match[1]);
+    }
+    count = max;
   }
+  return count;
 }
 
 /**
  *
  */
-function getCountFunc(index) {
+function getCountFunc(index, isLocal) {
   return async.asyncify(async (item, key) => {
     if (index && index != key) {
       return;
@@ -83,7 +101,7 @@ function getCountFunc(index) {
     try {
       let content;
       const fname = `./data/download/${key}.html`;
-      if (fs.existsSync(fname)) {
+      if (isLocal && fs.existsSync(fname)) {
         content = fs.readFileSync(fname).toString();
       } else {
         const res = await request.getAsync(item.url);
@@ -91,50 +109,15 @@ function getCountFunc(index) {
       }
 
       const matchTitle = content.match(/<title>(.*?)<\/title>/i);
-      if(matchTitle) {
+      if (matchTitle) {
         item.name = matchTitle[1]
-      } 
+      }
 
       const {
         type, argv
       } = item.parseConfig
-      if (type === 'regex') {
-        const regex = new RegExp(argv, 'g');
-        const match = regex.exec(content);
-        if (match) {
-          // TODO:
-          const count = parseInt(match[1], 10);
-          item.count = count;
-          console.log(`${item.name}: ${count}`);
-        } else {
-          console.log(`${item.name}: unknown`);
-        }
-      } else if (type === 'count') {
-        const regex = new RegExp(argv, 'g');
-        const match = content.match(regex);
-        if (match) {
-          console.log(match);
-          const count = match.length;
-          item.count = count;
-          console.log(`${item.name}: ${count}`);
-        } else {
-          console.log(`${item.name}: unknown`);
-        }
-      }  else if (type === 'numbered') {
-        const regex = new RegExp(argv, 'g');
-        let match;
-        let max = 0;
-        while (match = regex.exec(content)) {
-          max = Math.max(max, match [1]);
-        }
-        if (max) {
-          console.log(max);
-          item.count = max;
-          console.log(`${item.name}: ${max}`);
-        } else {
-          console.log(`${item.name}: unknown`);
-        }
-      }
+      item.count = parseHtml(content, type, argv);
+      console.log(`${item.name} :${item.count}`);
 
     } catch (error) {
       console.error(`Error when fetching ${item.url}`);
@@ -167,11 +150,9 @@ program
       async.eachOfLimit(list, 20, getDownloadFunc(), (error) => {
         console.log(error);
       })
-    } else if (cmd.local){
-      await readDataFromLocal('./data/download');
     } else if (cmd.count) {
-      async.eachOfLimit(list, 20, getCountFunc(cmd.index), (error) => {
-        fs.writeFileSync('./data/list.json', JSON.stringify({list: list}, null, 4));
+      async.eachOfLimit(list, 20, getCountFunc(cmd.index, cmd.local), (error) => {
+        fs.writeFileSync('./data/list.json', JSON.stringify({ list: list }, null, 4));
       })
     }
 
