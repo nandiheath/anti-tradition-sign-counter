@@ -67,7 +67,8 @@
             "parseConfig": {
                 "type": "numbered",
                 "argv": "(\\d+)\\.\\s+[^\\n]*\\s+\\d{4}"
-            }
+            },
+            "count": 0
         },
         {
             "index": 7,
@@ -827,7 +828,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1000
+            "count": 1065
         },
         {
             "index": 83,
@@ -957,7 +958,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 717
+            "count": 799
         },
         {
             "index": 96,
@@ -1357,7 +1358,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 231
+            "count": 237
         },
         {
             "index": 136,
@@ -1647,7 +1648,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1084
+            "count": 1091
         },
         {
             "index": 165,
@@ -1717,7 +1718,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1602
+            "count": 1621
         },
         {
             "index": 172,
@@ -1737,7 +1738,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 756
+            "count": 808
         },
         {
             "index": 174,
@@ -1926,7 +1927,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 759
+            "count": 762
         },
         {
             "index": 193,
@@ -2106,7 +2107,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 2019
+            "count": 2000
         },
         {
             "index": 211,
@@ -2566,7 +2567,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 30
+            "count": 31
         },
         {
             "index": 257,
@@ -2586,7 +2587,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 185
+            "count": 193
         },
         {
             "index": 259,
@@ -2696,7 +2697,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 159
+            "count": 184
         },
         {
             "index": 270,
@@ -2756,7 +2757,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 833
+            "count": 837
         },
         {
             "index": 276,
@@ -2806,7 +2807,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 492
+            "count": 493
         },
         {
             "index": 281,
@@ -3076,7 +3077,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 895
+            "count": 898
         },
         {
             "index": 308,
@@ -3136,7 +3137,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 165
+            "count": 212
         },
         {
             "index": 314,
@@ -3406,7 +3407,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 232
+            "count": 233
         },
         {
             "index": 341,
@@ -3576,7 +3577,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 167
+            "count": 180
         },
         {
             "index": 358,
@@ -3656,7 +3657,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 167
+            "count": 180
         },
         {
             "index": 366,
@@ -3726,7 +3727,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 302
+            "count": 387
         },
         {
             "index": 373,
@@ -3796,7 +3797,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 855
+            "count": 856
         },
         {
             "index": 380,
@@ -3816,7 +3817,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 460
+            "count": 491
         },
         {
             "index": 382,

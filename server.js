@@ -17,6 +17,7 @@ server.get('/list', (req, res, next) => {
       name: record.name,
       count: record.count,
       url: record.url,
+      checked: record.checked ? true: false
     }));
     res.send(200, {
       org_count: resultList.length,
