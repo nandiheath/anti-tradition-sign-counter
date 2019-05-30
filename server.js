@@ -1,5 +1,6 @@
 const restify = require('restify');
 const fs = require('fs');
+const { exec } = require('child_process');
 
 let list = [];
 function respond(req, res, next) {
@@ -29,7 +30,19 @@ server.get('/list', (req, res, next) => {
 
 });
 server.post('/list', (req, res, next) => {
+  console.log('start to run command');
+  exec('node cli.js parse -c', (err, stdout, stderr) => {
+    if (err) {
+      console.log(`stderr: ${stderr}`);
+      // node couldn't execute the command
+      return;
+    }
 
+    // the *entire* stdout and stderr (buffered)
+    console.log(`stdout: ${stdout}`);
+    console.log(`stderr: ${stderr}`);
+  });
+  res.send(200);
 });
 
 server.listen(8082, function() {

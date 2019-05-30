@@ -66,7 +66,7 @@ function getDownloadFunc() {
 
 
 function parseHtml(content, type, argv) {
-  const count = 0;
+  let count = 0;
   if (type === 'regex') {
     const regex = new RegExp(argv, 'g');
     const match = regex.exec(content);
