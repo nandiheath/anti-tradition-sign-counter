@@ -75,10 +75,11 @@
             "name": "港大校友關注組等發起「反對修訂《逃犯條例》聯署聲明」",
             "url": "http://bit.ly/2X9bROw",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "numbered",
+                "argv": "(\\d+)\\.\\s+[^\\n]*\\s+\\d{4}"
             },
-            "count": 0
+            "count": 51,
+            "checked": true
         },
         {
             "index": 8,
