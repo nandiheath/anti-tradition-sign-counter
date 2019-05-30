@@ -896,9 +896,10 @@
             "url": "http://bit.ly/2X8HxUh",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "(\\d+)\\ssigned"
             },
-            "count": 604800
+            "count": 1370,
+            "checked": true
         },
         {
             "index": 90,
