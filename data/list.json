@@ -2796,8 +2796,7 @@
             "name": "裘錦秋中學(元朗)校友、學生、及教職員反對修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2W93RRq",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "unknown"
             },
             "count": 604800
         },
