@@ -30,9 +30,11 @@ server.get('/list', (req, res, next) => {
   console.log(list);
 
 });
-server.post('/list', (req, res, next) => {
-  console.log('start to run command');
+
+function scheduleUpdate() {
+  console.log('going to update the list..');
   exec('node cli.js parse -c', (err, stdout, stderr) => {
+    setTimeout(scheduleUpdate, 1000 * 60 * 5 ); // run after 5 mins
     if (err) {
       console.log(`stderr: ${stderr}`);
       // node couldn't execute the command
@@ -43,8 +45,9 @@ server.post('/list', (req, res, next) => {
     console.log(`stdout: ${stdout}`);
     console.log(`stderr: ${stderr}`);
   });
-  res.send(200);
-});
+}
+
+scheduleUpdate();
 
 server.listen(8082, function() {
   console.log('%s listening at %s', server.name, server.url);
