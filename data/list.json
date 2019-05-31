@@ -1152,17 +1152,23 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1273
+            "count": 1273,
+            "checked": true
         },
         {
             "index": 103,
             "name": "瑪利諾修院學校（中學部）校友、學生及教職員就反對修訂《逃犯條例》之聯署聲明",
             "url": "https://bit.ly/2JHxpPg?fbclid=IwAR1wb2ZE7agUNeHEiIFOdrAjop-GHw6nfiuLGiVTFQNhn8CnDXQynTrZjyk",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "最後更新：[^\\n]*\\n\\n\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 1319,
+            "checked": true
         },
         {
             "index": 104,
@@ -1170,9 +1176,10 @@
             "url": "http://bit.ly/2JFTgGR",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "總共有(\\d+)人聯署"
             },
-            "count": 0
+            "count": 759,
+            "checked": true
         },
         {
             "index": 105,
@@ -1180,19 +1187,25 @@
             "url": "http://bit.ly/2EBW6bH",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "目前更新達到\\D*(\\d+)人"
             },
-            "count": 0
+            "count": 189,
+            "checked": true
         },
         {
             "index": 106,
             "name": "【屯天人反送中  捍衛香港自由】",
             "url": "http://bit.ly/2W5KU1X",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署師生校友﹕</p><p>.+?(?=</p>)",
+                    "<br>",
+                    0
+                ]
             },
-            "count": 0
+            "count": 450,
+            "checked": true
         },
         {
             "index": 107,
@@ -1202,7 +1215,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1197
+            "count": 1197,
+            "checked": true
         },
         {
             "index": 108,
@@ -1210,16 +1224,17 @@
             "url": "https://shorturl.at/ckmv6",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共收集到\\D*(\\d+)個聯署"
             },
-            "count": 0
+            "count": 538,
+            "checked": true
         },
         {
             "index": 109,
             "name": "一群東華三院黃笏南中學校友、教職員及學生反對修訂《逃犯條例》之聯署聲明",
             "url": "https://forms.gle/wNTcaMhXNGCcP1KU8",
             "parseConfig": {
-                "type": "regex",
+                "type": "todo",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -1229,27 +1244,37 @@
             "name": "一群庇理羅士女子中學校友就修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2WrbotT",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人（排名不分先後\\) ：\\n\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 1
+            "count": 1198,
+            "checked": true
         },
         {
             "index": 111,
             "name": "九龍華仁書院校友及師生反對《逃犯條例》修訂聯署聲明",
             "url": "http://bit.ly/30Wu04G",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人：[^\\n]*\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 1501,
+            "checked": true
         },
         {
             "index": 112,
             "name": "Attention Required! | Cloudflare",
             "url": "http://bit.ly/30MgNuV",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -1260,9 +1285,10 @@
             "url": "http://bit.ly/2WkI0FZ",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人數共(\\d+)人"
             },
-            "count": 2019
+            "count": 1141,
+            "checked": true
         },
         {
             "index": 114,
@@ -1270,9 +1296,10 @@
             "url": "http://bit.ly/30KZlXQ",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人數：(\\d+)"
             },
-            "count": 673
+            "count": 673,
+            "checked": true
         },
         {
             "index": 115,
@@ -1280,9 +1307,10 @@
             "url": "https://forms.gle/tReq9ndnSgefPSdWA",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人數([\\d,]+)人"
             },
-            "count": 2019
+            "count": 1192,
+            "checked": true
         },
         {
             "index": 116,
@@ -1292,7 +1320,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1048
+            "count": 1048,
+            "checked": true
         },
         {
             "index": 117,
@@ -1300,9 +1329,10 @@
             "url": "https://forms.gle/Bi5czXN5K5gyzR7g7",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "現時有(\\d+)人聯署"
             },
-            "count": 0
+            "count": 555,
+            "checked": true
         },
         {
             "index": 118,
@@ -4264,6 +4294,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-05-31 11:17:57"
+        "updated_at": "2019-05-31 11:41:41"
     }
 }
