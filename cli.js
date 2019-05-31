@@ -6,7 +6,7 @@ const fs = require('fs');
 const async = require('async');
 const mkdirp = require('mkdirp');
 const path = require('path');
-
+const moment = require('moment');
 
 const listSrc = 'https://samyip.net/2019/05/27/%E5%AD%B8%E7%95%8C%E5%8F%8A%E5%90%84%E7%95%8C-%E5%8F%8D%E9%80%81%E4%B8%AD%E8%81%AF%E7%BD%B2%E5%8F%8A%E9%97%9C%E6%B3%A8%E7%B5%84%E6%95%B4%E5%90%88/';
 const LIST_FILE_PATH = './data/list.json';
@@ -91,11 +91,11 @@ function parseHtml(content, type, argv) {
     if (match) {
       regex = new RegExp(argv[1], 'g');
       const index = argv[2];
-      
-      match = match[index].match(regex);      
+
+      match = match[index].match(regex);
       count = match.length + 1;
     }
-    
+
   }
   return count;
 }
@@ -163,7 +163,7 @@ program
       })
     } else if (cmd.count) {
       async.eachOfLimit(list, 20, getCountFunc(cmd.index, cmd.local), (error) => {
-        fs.writeFileSync('./data/list.json', JSON.stringify({ list: list }, null, 4));
+        fs.writeFileSync('./data/list.json', JSON.stringify({ list: list, meta: { updated_at: moment().format('YYYY-MM-DD hh:mm:ss') } }, null, 4));
       })
     }
 
