@@ -844,7 +844,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1212
+            "count": 1212,
+            "checked": true
         },
         {
             "index": 76,
@@ -852,9 +853,10 @@
             "url": "https://bit.ly/2VNZshC",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共\\D*(\\d+)人聯署"
             },
-            "count": 0
+            "count": 558,
+            "checked": true
         },
         {
             "index": 77,
@@ -862,9 +864,10 @@
             "url": "https://bit.ly/2K8k6qo",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共\\D*(\\d+)聯署"
             },
-            "count": 0
+            "count": 733,
+            "checked": true
         },
         {
             "index": 78,
@@ -874,7 +877,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 681
+            "count": 688,
+            "checked": true
         },
         {
             "index": 79,
@@ -882,9 +886,10 @@
             "url": "https://bit.ly/2X520ti",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "(\\d+)名聯署人"
             },
-            "count": 0
+            "count": 1551,
+            "checked": true
         },
         {
             "index": 80,
@@ -892,19 +897,25 @@
             "url": "https://bit.ly/2KdsaGm",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共有(\\d+)人聯署"
             },
-            "count": 0
+            "count": 1346,
+            "checked": true
         },
         {
             "index": 81,
             "name": "將軍澳官立中學舊生及學生反對修訂《逃犯條例》聯署聲明",
             "url": "https://bit.ly/2I2Zr4D",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "請分享給你身邊每一個將官人，多謝您！）\\n\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 153,
+            "checked": true
         },
         {
             "index": 82,
@@ -914,7 +925,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1100
+            "count": 1100,
+            "checked": true
         },
         {
             "index": 83,
@@ -924,7 +936,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 486
+            "count": 486,
+            "checked": true
         },
         {
             "index": 84,
@@ -934,17 +947,23 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 918
+            "count": 918,
+            "checked": true
         },
         {
             "index": 85,
             "name": "余振強紀念中學校友師生就特區政府修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2VOR41v",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署校友：\\n\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 199,
+            "checked": true
         },
         {
             "index": 86,
@@ -952,9 +971,10 @@
             "url": "http://bit.ly/2Wvlytu",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": " 已有\\s*(\\d+)\\s*人聯署"
             },
-            "count": 0
+            "count": 1249,
+            "checked": true
         },
         {
             "index": 87,
@@ -962,9 +982,10 @@
             "url": "http://bit.ly/2W7gg8u",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人：\\D*(\\d+)人"
             },
-            "count": 0
+            "count": 1251,
+            "checked": true
         },
         {
             "index": 88,
@@ -972,9 +993,10 @@
             "url": "http://bit.ly/2HGjSp8",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人：\\D*(\\d+)人"
             },
-            "count": 0
+            "count": 1517,
+            "checked": true
         },
         {
             "index": 89,
@@ -993,9 +1015,10 @@
             "url": "http://bit.ly/2JHY8vg",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人：(\\d+)"
             },
-            "count": 0
+            "count": 1767,
+            "checked": true
         },
         {
             "index": 91,
@@ -1003,16 +1026,17 @@
             "url": "http://bit.ly/2MdR7Ex",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共(\\d+)人"
             },
-            "count": 0
+            "count": 1047,
+            "checked": true
         },
         {
             "index": 92,
             "name": "東華三院甲寅年總理中學舊生、學生及教職員反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2K60pja",
             "parseConfig": {
-                "type": "regex",
+                "type": "todo",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -1022,7 +1046,7 @@
             "name": "聖伯多祿中學校友、師生反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2W60z1l",
             "parseConfig": {
-                "type": "regex",
+                "type": "na",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -1032,10 +1056,15 @@
             "name": "「沙田官立中學校友逃犯條例關注組」就修訂《逃犯條例》呼籲各屆校友聯署",
             "url": "http://bit.ly/2Ka467E",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人：\\n([^\"]*)\">",
+                    "[^-\\d\\s]+\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 665,
+            "checked": true
         },
         {
             "index": 95,
@@ -1045,17 +1074,23 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 803
+            "count": 803,
+            "checked": true
         },
         {
             "index": 96,
             "name": "匡智翠林晨崗學校師生校友-反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/30JtWoE",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人\\(陸續更新\\)  :\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 6,
+            "checked": true
         },
         {
             "index": 97,
@@ -1063,16 +1098,17 @@
             "url": "https://forms.gle/WPXNPi6GfBQs5oeS6",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共\\D*(\\d+)人"
             },
-            "count": 0
+            "count": 205,
+            "checked": true
         },
         {
             "index": 98,
             "name": "香港培道中學校友、學生及教職員反對修訂《逃犯條例》聯署聲明",
             "url": "https://www.facebook.com/olcmssconcern/?__tn__=K-R-R-R-R&eid=ARC8w6riMivnGNJtMTYg1zOUsPF3oyGxyYYDgSl8xO8QzUZntPmjc1VbQr9qA4lKnsByTgvb4WWNtSp2&fref=mentions&__xts__%5B0%5D=68.ARDT_zrVTYcDSD9eYdNTiw6ntZMANNPXCSbxMFEmrH3IbBzcJbPTMR99G8vGkpbcSIxjZ7AuTW-HHNEjd0wGfr-fh8UjRo0xBbmrhfAquXWYGUGGamNtMpL1wPFdwIm-q0MZTcTOTshspAGEIoeZBtXyF2TqeB5hAUnIsl-H6CR-tvcAQ39wedBgHnatvX9jyFmxy4rbo83z60s8Md6nSPhhtHqyolJx7PECrtL99q9qm3xNtqzyh3pknEGokyj7Ttq8OflT0ruY2KpA3ys_ytLtC-U_OYV6OmzRRg6JizzXw5jpVbL4-VQw-7mDlC-OpfOY",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -1082,7 +1118,7 @@
             "name": "天主教崇德英文書院校友及學生－反對修訂《逃犯條例》聯署聲明",
             "url": "https://www.facebook.com/olcconcengroup/?__tn__=K-R-R-R-R&eid=ARD66rGATrSbqtNHSf4bpS-FWg_tTVS7ieNke28p86LXgoh9Bjf8LlRJAhW0wBdMmcMyHR65q7l8MWDP&fref=mentions&__xts__%5B0%5D=68.ARDT_zrVTYcDSD9eYdNTiw6ntZMANNPXCSbxMFEmrH3IbBzcJbPTMR99G8vGkpbcSIxjZ7AuTW-HHNEjd0wGfr-fh8UjRo0xBbmrhfAquXWYGUGGamNtMpL1wPFdwIm-q0MZTcTOTshspAGEIoeZBtXyF2TqeB5hAUnIsl-H6CR-tvcAQ39wedBgHnatvX9jyFmxy4rbo83z60s8Md6nSPhhtHqyolJx7PECrtL99q9qm3xNtqzyh3pknEGokyj7Ttq8OflT0ruY2KpA3ys_ytLtC-U_OYV6OmzRRg6JizzXw5jpVbL4-VQw-7mDlC-OpfOY",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -1092,7 +1128,7 @@
             "name": "Attention Required! | Cloudflare",
             "url": "http://chng.it/nypWgNRWXJ",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -1105,7 +1141,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1328
+            "count": 1328,
+            "checked": true
         },
         {
             "index": 102,
