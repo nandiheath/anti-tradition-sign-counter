@@ -24,9 +24,10 @@ server.get('/list', (req, res, next) => {
       checked: record.checked ? true : false
     }));
     res.send(200, {
-      org_count: resultList.length,
-      meta: content.meta,
-      total: resultList.map(record => parseInt(record.count)).reduce((p, c) => p + c, 0),
+      meta: Object.assign({
+        org_count: resultList.length,
+        total: resultList.map(record => parseInt(record.count)).reduce((p, c) => p + c, 0),
+      }, content.meta),
       data: resultList,
     })
   } catch (error) {
