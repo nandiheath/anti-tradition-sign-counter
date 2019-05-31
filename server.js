@@ -25,12 +25,13 @@ server.get('/list', (req, res, next) => {
     }));
     res.send(200, {
       org_count: resultList.length,
+      meta: content.meta,
       total: resultList.map(record => parseInt(record.count)).reduce((p, c) => p + c, 0),
       data: resultList,
     })
   } catch (error) {
 
-  }  
+  }
 
 });
 
