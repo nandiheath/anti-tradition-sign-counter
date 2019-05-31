@@ -93,7 +93,7 @@ function parseHtml(content, type, argv) {
       const index = argv[2];
       
       match = match[index].match(regex);      
-      count = match.length;
+      count = match.length + 1;
     }
     
   }

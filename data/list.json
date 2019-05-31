@@ -393,9 +393,10 @@
             "url": "http://bit.ly/2K8RZY9",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "有(\\d+)人參與聯署"
             },
-            "count": 0
+            "count": 495,
+            "checked": true
         },
         {
             "index": 36,
@@ -405,7 +406,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 985
+            "count": 985,
+            "checked": true
         },
         {
             "index": 37,
@@ -413,19 +415,25 @@
             "url": "http://bit.ly/2I14TVE",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署暫有(\\d+)人"
             },
-            "count": 0
+            "count": 234,
+            "checked": true
         },
         {
             "index": 38,
             "name": "香港大學專業進修學院校友、學生及教職員反對修訂《逃犯條例》聯署聲明",
             "url": "https://forms.gle/QFrXUrMZgz8LKX4z6",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "不斷更新 UPDATED ON [^\n]*\n[^\n]*\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 88,
+            "checked": true
         },
         {
             "index": 39,
@@ -435,17 +443,23 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 638
+            "count": 638,
+            "checked": true
         },
         {
             "index": 40,
             "name": "東華學院學生、教職員、校友就反對政府修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2JKyGFu",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署名單\\(不斷更新\\) :\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 100,
+            "checked": true
         },
         {
             "index": 41,
@@ -453,9 +467,10 @@
             "url": "http://bit.ly/2I9cIZp",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共收到(\\d+)份聯署"
             },
-            "count": 0
+            "count": 11,
+            "checked": true
         },
         {
             "index": 42,
