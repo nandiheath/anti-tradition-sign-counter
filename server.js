@@ -23,6 +23,8 @@ server.get('/list', (req, res, next) => {
       url: record.url,
       checked: record.checked ? true : false
     }));
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.send(200, {
       meta: Object.assign({
         org_count: resultList.length,
