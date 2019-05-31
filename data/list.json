@@ -169,30 +169,45 @@
             "name": "《一群香港樹仁大學新聞及傳播學系校友反對修訂『逃犯條例』聲明》",
             "url": "http://bit.ly/2JHZO7K",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署([^\\n]*)([^\"]*)\">",
+                    "\\n",
+                    2
+                ]
             },
-            "count": 0
+            "count": 465,
+            "checked": true
         },
         {
             "index": 16,
             "name": "理大學生、校友、教職員反對修訂《逃犯條例》聯署聲明",
             "url": "https://bit.ly/2HDb2IG",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "畢業學系\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 5597,
+            "checked": true
         },
         {
             "index": 17,
             "name": "香港理工大學香港專上學院舊生、學生、教師及前教職員反對修訂《逃犯條例》聯署聲明",
             "url": "https://forms.gle/HV2khzNBUspRTFWc9",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人：\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 634,
+            "checked": true
         },
         {
             "index": 18,
