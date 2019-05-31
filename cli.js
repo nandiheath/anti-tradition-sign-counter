@@ -91,7 +91,6 @@ function parseHtml(content, type, argv) {
     if (match) {
       regex = new RegExp(argv[1], 'g');
       const index = argv[2];
-
       match = match[index].match(regex);
       count = match.length + 1;
     }
