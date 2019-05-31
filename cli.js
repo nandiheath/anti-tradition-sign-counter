@@ -42,7 +42,7 @@ program.command('gen_list').action(async () => {
     }
   })
 
-  fs.writeFileSync('./data/list.json', JSON.stringify(fsContent, null, 2));
+  fs.writeFileSync('./data/list.json', JSON.stringify(fsContent, null, 4));
 })
 
 

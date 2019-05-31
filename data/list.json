@@ -4231,6 +4231,33 @@
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
+        },
+        {
+            "index": 411,
+            "name": "唐賓南民運關注組",
+            "url": "https://www.facebook.com/cbtstudentcampaign/?__tn__=K-R-R-R-R-R-R-R&eid=ARAg-ZG_BRUaae1XduT48NQDP3_OS2wKOuWiNMM4iK2W4vtK4v1sSdmy3HLbvmqjXr4iXpVpKDjmZIlF&fref=mentions&__xts__%5B0%5D=68.ARA_-NeKsqt9pniJl6NLYlDMGDL9xzbqP-VTP9bfSTZAub6CRX5Pjmg5qV2l5bhHe8JSKkMKjSmrFfmA94qPxR1QtkLZoHIIdXxLTf2N47W_By5BgX5ZiZictr885YSSm6zo8h-67vL7Upi4yge6Lq_NKOEegln8yNeKOSH4pTjOKqb40WoLaqfx2ZwC72lXNLYVBSgkgWrDr0jhFnAAwAifuArVGafv7nWiiBugqNyyz5xU3dupA4ohgMQbaDzOF9QXBvut5nWIo3Nl6Ale9aIbGu8tsZ09IgB6UAYGsCkflZMY1Pvd5QaaZCoeW-ktkFVP",
+            "parseConfig": {
+                "type": "regex",
+                "argv": "人數\\D*(\\d+)"
+            }
+        },
+        {
+            "index": 412,
+            "name": "http://bit.ly/2KhkTWq",
+            "url": "http://bit.ly/2KhkTWq",
+            "parseConfig": {
+                "type": "regex",
+                "argv": "人數\\D*(\\d+)"
+            }
+        },
+        {
+            "index": 413,
+            "name": "http://bit.ly/2WCU3yc",
+            "url": "http://bit.ly/2WCU3yc",
+            "parseConfig": {
+                "type": "regex",
+                "argv": "人數\\D*(\\d+)"
+            }
         }
     ],
     "meta": {
