@@ -9,15 +9,19 @@ function respond(req, res, next) {
 }
 
 var server = restify.createServer();
+server.use(restify.plugins.queryParser());
 server.get('/list', (req, res, next) => {
+  const checked = req.query.checked;
   try {
     const content = JSON.parse(fs.readFileSync('./data/list.json').toString());
     list = content.list;
-    const resultList = list.filter(record => record.count > 0).map(record => ({
+    const resultList = list.filter(record => record.count > 0 &&
+      checked === undefined ? true : record.checked === (checked === 'true')
+    ).map(record => ({
       name: record.name,
       count: record.count,
       url: record.url,
-      checked: record.checked ? true: false
+      checked: record.checked ? true : false
     }));
     res.send(200, {
       org_count: resultList.length,
@@ -26,15 +30,14 @@ server.get('/list', (req, res, next) => {
     })
   } catch (error) {
 
-  }
-  console.log(list);
+  }  
 
 });
 
 function scheduleUpdate() {
   console.log('going to update the list..');
   exec('node cli.js parse -c', (err, stdout, stderr) => {
-    setTimeout(scheduleUpdate, 1000 * 60 * 5 ); // run after 5 mins
+    setTimeout(scheduleUpdate, 1000 * 60 * 5); // run after 5 mins
     if (err) {
       console.log(`stderr: ${stderr}`);
       // node couldn't execute the command
@@ -42,13 +45,13 @@ function scheduleUpdate() {
     }
 
     // the *entire* stdout and stderr (buffered)
-    console.log(`stdout: ${stdout}`);
-    console.log(`stderr: ${stderr}`);
+    // console.log(`stdout: ${stdout}`);
+    // console.log(`stderr: ${stderr}`);
   });
 }
 
 scheduleUpdate();
 
-server.listen(8082, function() {
+server.listen(8082, function () {
   console.log('%s listening at %s', server.name, server.url);
 });

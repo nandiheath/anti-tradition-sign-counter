@@ -1048,7 +1048,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1304
+            "count": 1306
         },
         {
             "index": 102,
@@ -1108,7 +1108,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1163
+            "count": 1197
         },
         {
             "index": 108,
@@ -1768,7 +1768,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 808
+            "count": 820
         },
         {
             "index": 174,
@@ -1957,7 +1957,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 779
+            "count": 782
         },
         {
             "index": 193,
@@ -2807,7 +2807,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 287
+            "count": 296
         },
         {
             "index": 278,
@@ -3436,7 +3436,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 251
+            "count": 252
         },
         {
             "index": 341,
@@ -3506,7 +3506,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 772
+            "count": 778
         },
         {
             "index": 348,
@@ -3826,7 +3826,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 859
+            "count": 861
         },
         {
             "index": 380,
@@ -3970,7 +3970,7 @@
         },
         {
             "index": 394,
-            "name": "馬灣街坊反對修訂《逃犯條例》聯署聲明 Statement of Ma Wan Residents – Objection to the Extradition Law Amendments",
+            "name": "一群馬灣街坊反對修訂《逃犯條例》聯署聲明 Statement of A group of Ma Wan Residents – Objection to the Extradition Law Amendments",
             "url": "http://bit.ly/2YTSae5",
             "parseConfig": {
                 "type": "regex",
@@ -4056,7 +4056,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 318
+            "count": 332
         },
         {
             "index": 403,
