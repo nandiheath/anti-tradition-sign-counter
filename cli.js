@@ -85,6 +85,17 @@ function parseHtml(content, type, argv) {
       max = Math.max(max, match[1]);
     }
     count = max;
+  } else if (type === 'count_in') {
+    let regex = new RegExp(argv[0], 'g');
+    let match = regex.exec(content);
+    if (match) {
+      regex = new RegExp(argv[1], 'g');
+      const index = argv[2];
+      
+      match = match[index].match(regex);      
+      count = match.length;
+    }
+    
   }
   return count;
 }
