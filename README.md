@@ -19,7 +19,18 @@ node cli.js parse -c
 
 ### To Fix the regex
 
-Now support 3 `type` of regex
+```bash
+
+# edit the data/list.json to change the regex
+
+# Download all the content to local for speeding up
+node cli.js parse -d
+
+# Run only with the specified index
+node cli.js parse -c -l -i [index]
+```
+
+Now support 4 `type` of regex
 
 `regex`
 
@@ -66,12 +77,3 @@ Kwan Man Ho	校友	BBA	2011
 - find the specified regex and get the max number of it
 - Best suit for '1. XYZ (2017 XYZ)\n'
 
-```bash
-
-# edit the data/list.json
-
-# Change the regex
-
-# Run only with the specified index
-node cli.js parse -c -i [index]
-```
