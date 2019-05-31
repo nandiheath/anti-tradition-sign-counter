@@ -71,7 +71,7 @@ function parseHtml(content, type, argv) {
     const regex = new RegExp(argv, 'g');
     const match = regex.exec(content);
     if (match) {
-      count = parseInt(match[1], 10);
+      count = parseInt(match[1].replace(/\D/g, ''), 10);
     }
   } else if (type === 'count') {
     const regex = new RegExp(argv, 'g');
