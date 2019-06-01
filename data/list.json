@@ -2212,7 +2212,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 820
+            "count": 820,
+            "checked": true
         },
         {
             "index": 193,
@@ -2220,9 +2221,10 @@
             "url": "http://bit.ly/2wnFwrD",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人：(\\d+)位"
             },
-            "count": 0
+            "count": 981,
+            "checked": true
         },
         {
             "index": 194,
@@ -2230,9 +2232,10 @@
             "url": "http://bit.ly/2YURMfr",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共\\s+(\\d+)\\s+人聯署"
             },
-            "count": 0
+            "count": 844,
+            "checked": true
         },
         {
             "index": 195,
@@ -2240,9 +2243,10 @@
             "url": "http://bit.ly/2QxvGN5",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人：\\s+(\\d+)人"
             },
-            "count": 0
+            "count": 149,
+            "checked": true
         },
         {
             "index": 196,
@@ -2252,27 +2256,38 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 469
+            "count": 469,
+            "checked": true
         },
         {
             "index": 197,
             "name": "中華基督教會蒙民偉書院師生校友反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2Wu2Far",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "教職員：\\n([^\"]*)\">",
+                    "[^\\n：]+\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 689,
+            "checked": true
         },
         {
             "index": 198,
             "name": "樂善堂楊葛小琳中學校友及師生聯署聲明︰要求政府撤回《逃犯條例》修訂",
             "url": "http://bit.ly/2EE5ATX",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人:[^\\n]+\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 244,
+            "checked": true
         },
         {
             "index": 199,
@@ -2282,7 +2297,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 215
+            "count": 215,
+            "checked": true
         },
         {
             "index": 200,
@@ -2292,7 +2308,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1192
+            "count": 1192,
+            "checked": true
         },
         {
             "index": 201,
@@ -2300,9 +2317,10 @@
             "url": "http://bit.ly/2EPxBrV",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人數[^\\n]+：(\\d+)"
             },
-            "count": 31
+            "count": 1536,
+            "checked": true
         },
         {
             "index": 202,
@@ -4870,6 +4888,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-01 01:47:55"
+        "updated_at": "2019-06-01 02:07:00"
     }
 }
