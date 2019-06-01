@@ -4031,7 +4031,8 @@
                 "type": "regex",
                 "argv": "聯署人：\\D*(\\d+)"
             },
-            "count": 114
+            "count": 114,
+            "checked": true
         },
         {
             "index": 375,
@@ -4061,7 +4062,8 @@
                 "type": "regex",
                 "argv": "合共\\D*(\\d+)"
             },
-            "count": 286
+            "count": 286,
+            "checked": true
         },
         {
             "index": 378,
@@ -4111,7 +4113,8 @@
                 "type": "regex",
                 "argv": "暫共\\D*(\\d+)"
             },
-            "count": 923
+            "count": 923,
+            "checked": true
         },
         {
             "index": 383,
@@ -4231,7 +4234,8 @@
                 "type": "regex",
                 "argv": "已有\\D*(\\d+)"
             },
-            "count": 333
+            "count": 333,
+            "checked": true
         },
         {
             "index": 395,
@@ -4371,7 +4375,8 @@
                 "type": "regex",
                 "argv": "聯署人／組織：共\\D*(\\d+)"
             },
-            "count": 271
+            "count": 271,
+            "checked": true
         },
         {
             "index": 409,
