@@ -102,7 +102,10 @@ function parseHtml(content, type, argv, isDebug) {
       match = match[index].match(regex);
       if (isDebug) {
         match.forEach((v, i) => {
-          console.log(`${i}: ${v.trim()}`)
+          if (i < 50 || i >= match.length - 50) {
+            console.log(`${i}: ${v.trim()}`)
+          }
+
         })
       }
       // default the offset to 1
