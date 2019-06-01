@@ -103,7 +103,7 @@ function parseHtml(content, type, argv, isDebug) {
       if (isDebug) {
         match.forEach((v, i) => {
           if (i < 50 || i >= match.length - 50) {
-            console.log(`${i}: ${v.trim()}`)
+            console.log(`${i + 1}: ${v.trim()}`)
           }
 
         })
