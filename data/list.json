@@ -3527,19 +3527,25 @@
             "url": "http://bit.ly/2WvuO0U",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "有(\\d+)人聯署"
             },
-            "count": 0
+            "count": 951,
+            "checked": true
         },
         {
             "index": 303,
             "name": "一群德貞女子中學的校友、教職員及學生要求撤回《逃犯條例》及《刑事事宜相互法律協助條例》修訂草案",
             "url": "https://forms.gle/u5jenNqNdNY6zsd39",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "-------------------------------\\n([^\"]*)\">",
+                    "[^：\\n]+\\n",
+                    1
+                ]
             },
-            "count": 0
+            "checked": true,
+            "count": 439
         },
         {
             "index": 304,
@@ -3547,9 +3553,9 @@
             "url": "http://bit.ly/2XghfQa",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共(\\d+)人"
             },
-            "count": 0
+            "count": 285
         },
         {
             "index": 305,
@@ -5165,6 +5171,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-01 17:06:25"
+        "updated_at": "2019-06-01 17:19:59"
     }
 }
