@@ -3762,10 +3762,11 @@
             "name": "中華基督教會譚李麗芬紀念中學校友、學生、教職員反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2EFgGYK",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "numbered",
+                "argv": "(\\d+)\\.\\s+[^\\n]*\\s+\\d{4}"
             },
-            "count": 0
+            "count": 49,
+            "checked": true
         },
         {
             "index": 323,
@@ -3775,17 +3776,24 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 429
+            "count": 429,
+            "checked": true
         },
         {
             "index": 324,
             "name": "中華基督教會基協中學舊生、學生及教師反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2HJQSwA",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人[^\\n]+\\n([^\"]*)\">",
+                    "[^：\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 6
+            "count": 213,
+            "checked": true
         },
         {
             "index": 325,
@@ -3793,49 +3801,74 @@
             "url": "http://bit.ly/2IjqgBR",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共 ([\\d,]+) 人"
             },
-            "count": 0
+            "count": 1202,
+            "checked": true
         },
         {
             "index": 326,
             "name": "中華基督教會公理高中書院 / 公理書院校友、學生及教職員反對《逃犯條例》修訂之聯署聲明",
             "url": "http://bit.ly/2XfEQQT",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署名單[^\\n]+\\n([^\"]*)\">",
+                    "[^：\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 0
+            "count": 125,
+            "checked": true
         },
         {
             "index": 327,
             "name": "中華基督教會全完中學校友、師生就修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2WquSiw",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人 :\\n([^\"]*)\">",
+                    "[^：\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 6
+            "count": 781,
+            "checked": true
         },
         {
             "index": 328,
             "name": "中聖書院師生反對修訂《逃犯條例》的聯署聲明",
             "url": "http://bit.ly/2XfMTNw",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人\\(排名不分先後\\)：\\n([^\"]*)\">",
+                    "[^：\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 0
+            "count": 199,
+            "checked": true
         },
         {
             "index": 329,
             "name": "世界龍岡學校劉皇發中學校友就修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2W2QEop",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人（排名不分先後\\) ：\\n\\n([^\"]*)\">",
+                    "[^：\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 0
+            "count": 133,
+            "checked": true
         },
         {
             "index": 330,
@@ -3845,7 +3878,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 92
+            "count": 92,
+            "checked": true
         },
         {
             "index": 331,
@@ -3853,26 +3887,32 @@
             "url": "http://bit.ly/2JLDvyh",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共有(\\d+)人聯署"
             },
-            "count": 0
+            "count": 98,
+            "checked": true
         },
         {
             "index": 332,
             "name": "樂善堂梁銶琚學校友師生舊生、學生及教師反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2I5h57U",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人：\\n樂善堂梁銶琚書院\\n([^\"]*)\">",
+                    "[^：\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 0
+            "count": 105
         },
         {
             "index": 333,
             "name": "全港佛教中學校友及師生有關反對《逃犯條例》修訂聯署聲明",
             "url": "http://forms.gle/57N55w23QXGgUcNWA",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -3882,10 +3922,16 @@
             "name": "聖公會聖瑪利亞堂莫慶堯中學校友、學生及教職員反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2W1ZpyF",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署者[^\\n]+\\n([^\"]*)\">",
+                    "[^-\\n]+\\n",
+                    1,
+                    0
+                ]
             },
-            "count": 0
+            "count": 15,
+            "checked": true
         },
         {
             "index": 335,
@@ -3893,19 +3939,26 @@
             "url": "http://bit.ly/2YUoxJK",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人\\D+(\\d+)名"
             },
-            "count": 0
+            "count": 509,
+            "checked": true
         },
         {
             "index": 336,
             "name": "基督教香港信義會心誠中學校友、學生及教職員反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2EGHiIN",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署名單\\(持續更新\\)\\n姓名 \\(畢業年份/在學/在職/離職\\)\\n\\n([^\"]*)\">",
+                    "[^-\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 0
+            "count": 87,
+            "checked": true
         },
         {
             "index": 337,
@@ -3913,9 +3966,10 @@
             "url": "http://bit.ly/2EEr2s4",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人：共(\\d+)人"
             },
-            "count": 0
+            "count": 513,
+            "checked": true
         },
         {
             "index": 338,
@@ -3923,16 +3977,17 @@
             "url": "http://bit.ly/2VUEtK1",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人\\((\\d+)人\\)"
             },
-            "count": 0
+            "count": 301,
+            "checked": true
         },
         {
             "index": 339,
             "name": "保良局蔡繼有學校師生及校友反對修訂《逃犯條例》聯署聲明 Members of PLK Choi Kai Yau School Statement on Extradition Law Amendment",
             "url": "http://bit.ly/2WAwAxE",
             "parseConfig": {
-                "type": "regex",
+                "type": "todo",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -3945,7 +4000,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 285
+            "count": 285,
+            "checked": true
         },
         {
             "index": 341,
@@ -5201,6 +5257,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-01 18:06:38"
+        "updated_at": "2019-06-01 18:26:37"
     }
 }
