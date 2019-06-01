@@ -4061,7 +4061,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 291
+            "count": 291,
+            "checked": true
         },
         {
             "index": 347,
@@ -4071,7 +4072,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 811
+            "count": 811,
+            "checked": true
         },
         {
             "index": 348,
@@ -4118,7 +4120,7 @@
             "name": "心光學校校友會校友、學生及教職員就特區政府修訂逃犯條例之聯署聲明",
             "url": "http://bit.ly/2QzPhfO",
             "parseConfig": {
-                "type": "regex",
+                "type": "todo",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 2008
@@ -4141,7 +4143,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 86
+            "count": 86,
+            "checked": true
         },
         {
             "index": 355,
@@ -4171,7 +4174,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 278
+            "count": 278,
+            "checked": true
         },
         {
             "index": 358,
@@ -4231,7 +4235,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 297
+            "count": 297,
+            "checked": true
         },
         {
             "index": 364,
@@ -4251,7 +4256,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 278
+            "count": 278,
+            "checked": true
         },
         {
             "index": 366,
@@ -4261,7 +4267,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 186
+            "count": 186,
+            "checked": true
         },
         {
             "index": 367,
@@ -4321,7 +4328,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 387
+            "count": 387,
+            "checked": true
         },
         {
             "index": 373,
@@ -4393,7 +4401,9 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 873
+            "count": 873,
+            "checked": true
+
         },
         {
             "index": 380,
@@ -4411,9 +4421,9 @@
             "url": "https://bit.ly/2HCsflk",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "合共聯署人數\\D*(\\d+)位"
             },
-            "count": 511
+            "count": 529
         },
         {
             "index": 382,
@@ -4451,7 +4461,7 @@
             "name": "社福界發起 ~ 守護我城反送中聯署！",
             "url": "https://forms.gle/buqr8Y8DoCtJxLiH6",
             "parseConfig": {
-                "type": "regex",
+                "type": "todo",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 1997
@@ -4501,7 +4511,7 @@
             "name": "【撤回送中修訂 保障創作自由】動漫遊戲同人界反對修訂《逃犯條例》聯署聲明",
             "url": "https://forms.gle/kMAD1sCQEW5WydSC7",
             "parseConfig": {
-                "type": "regex",
+                "type": "todo",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 1095
@@ -4540,10 +4550,12 @@
                 "argv": [
                     "聯署名單\\(持繼更新中\\) :\\n([^\"]*)\">",
                     ".+\\n",
-                    1
+                    1,
+                    0
                 ]
             },
-            "count": 424
+            "count": 423,
+            "checked": true
         },
         {
             "index": 394,
@@ -4659,7 +4671,8 @@
                     1
                 ]
             },
-            "count": 123
+            "count": 123,
+            "checked": true
         },
         {
             "index": 405,
@@ -4696,10 +4709,10 @@
             "name": "曾在/目前於澳洲居留的香港人就反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2K8plqg",
             "parseConfig": {
-                "type": "count_in",
+                "type": "todo",
                 "argv": [
                     "目前聯署.*\\n.*\\n([^\"]*)\">",
-                    ".+\\n",
+                    "[^：\\n]+\\n",
                     1
                 ]
             },
@@ -4735,10 +4748,12 @@
                 "argv": [
                     "Co-signatories.*\\n\\n([^\"]*)\">",
                     ".+\\n",
-                    1
+                    1,
+                    0
                 ]
             },
-            "count": 104
+            "count": 103,
+            "checked": true
         },
         {
             "index": 411,
@@ -4964,12 +4979,14 @@
             "parseConfig": {
                 "type": "count_in",
                 "argv": [
-                    "聯署人.*\\n([^\"]*)\">",
+                    "聯署人.*([^\"]*)\">",
                     ".+\\n",
-                    1
+                    1,
+                    0
                 ]
             },
-            "count": 102
+            "count": 101,
+            "checked": true
         },
         {
             "index": 431,
@@ -5015,7 +5032,8 @@
                 "type": "regex",
                 "argv": "共\\D*(\\d+)人"
             },
-            "count": 157
+            "count": 157,
+            "checked": true
         },
         {
             "index": 435,
@@ -5104,10 +5122,12 @@
                 "argv": [
                     "聯署人\\（聯署名單會持續更新.*\\n([^\"]*)\">",
                     "[^：\\n]+\\n",
-                    1
+                    1,
+                    0
                 ]
             },
-            "count": 39
+            "count": 38,
+            "checked": true
         },
         {
             "index": 443,
@@ -5118,10 +5138,12 @@
                 "argv": [
                     "已簽署人士包括.*\\n([^\"]*)\">",
                     ".+\\n",
-                    2
+                    1,
+                    0
                 ]
             },
-            "count": 22
+            "count": 21,
+            "checked": true
         },
         {
             "index": 444,
@@ -5257,6 +5279,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-01 18:26:37"
+        "updated_at": "2019-06-01 18:57:45"
     }
 }
