@@ -4009,16 +4009,17 @@
             "url": "http://bit.ly/2wqkA35",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "(\\d+)名師生/校友/教職員"
             },
-            "count": 0
+            "count": 115,
+            "checked": true
         },
         {
             "index": 342,
             "name": "東華三院黃鳳翎中學校友、學生及教職員要求撤回《逃犯條例》及《刑事事宜相互法律協助條例》修訂草案聯署聲明",
             "url": "http://bit.ly/2YVMsbA",
             "parseConfig": {
-                "type": "regex",
+                "type": "redirect",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4029,9 +4030,10 @@
             "url": "http://bit.ly/2HKXYRG",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "已超過(\\d+)人"
             },
-            "count": 0
+            "count": 640,
+            "checked": true
         },
         {
             "index": 344,
@@ -4039,19 +4041,21 @@
             "url": "http://bit.ly/2YRhbXe",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯暑人 （不斷更新）\\s*(\\d+)人"
             },
-            "count": 0
+            "count": 239,
+            "checked": true
         },
         {
             "index": 345,
             "name": "葵涌循道中學舊生、學生、現職及往職教職員等就反對2019年《逃犯條例》修訂草案之聯署聲明",
             "url": "http://bit.ly/2YY4mdJ",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "numbered",
+                "argv": "(\\d+)\\.\\s+[^\\n]*\\n"
             },
-            "count": 0
+            "count": 137,
+            "checked": true
         },
         {
             "index": 346,
@@ -4080,7 +4084,7 @@
             "name": "何文田官立中學校友、師生就修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2EFfkgM",
             "parseConfig": {
-                "type": "regex",
+                "type": "redirect",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4091,16 +4095,17 @@
             "url": "http://bit.ly/2HKJQI6",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人：[^\\n]+\\s(\\d+)人"
             },
-            "count": 0
+            "count": 450,
+            "checked": true
         },
         {
             "index": 350,
             "name": "嶺南鍾榮光博士紀念中學師生校友就修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2wrmQar",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4110,7 +4115,7 @@
             "name": "心光學校校友會",
             "url": "https://www.facebook.com/%E5%BF%83%E5%85%89%E5%AD%B8%E6%A0%A1%E6%A0%A1%E5%8F%8B%E6%9C%83-1498463617085322/?__tn__=K-R-R&eid=ARAJ_DEYWDNIp-bpqJxm_Pj7bGVsdBMOKlTkhwXW-h6h5Jl_So4ZC5B1D2dQVHGC4CsUWl89on38v1Af&fref=mentions&__xts__%5B0%5D=68.ARB0nP2UD2s2Wbqt1Kw07DdLdaNnCZ0Qhr5NyTpYT75xmMOyNONaPJvNZ1qZxRE1mA53ZIzYoxiNP9rwKVXgqL4pCcsT7f73LlmWkcnoAQwx1Twg8KQ06Ns0oljTmZ1aSKljIQ1u42QUtfY0Ho8bXZRhY3h21pAu0boMFcqdHBVsFkRRhbmnJM5JkF1oPn50qumu9b6aKMNgY9d_Z-LZtfKTgEd8qqKKHizBAZbSNU1tL3EvDyQDVPFNMGdQ39YCkGt8H8RoR6E4ifpuA6McdePutU7hn3SPdAnvpbOhjdkCp6R1U7A6knn7I1yb14C0yRzZ",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4120,10 +4125,16 @@
             "name": "心光學校校友會校友、學生及教職員就特區政府修訂逃犯條例之聯署聲明",
             "url": "http://bit.ly/2QzPhfO",
             "parseConfig": {
-                "type": "todo",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人數，每天不斷更新；\\n([^\"]*)\">",
+                    ".+[ ]+.+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 0
+            "count": 38,
+            "checked": true
         },
         {
             "index": 353,
@@ -4131,9 +4142,10 @@
             "url": "http://bit.ly/2YY7ztX",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "【(\\d+)名聯署人】"
             },
-            "count": 0
+            "count": 162,
+            "checked": true
         },
         {
             "index": 354,
@@ -4152,9 +4164,10 @@
             "url": "https://forms.gle/VuER5aMB6HeXf5ZC7",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人名單如下[^\\n]+\\((\\d+)人"
             },
-            "count": 0
+            "count": 370,
+            "checked": true
         },
         {
             "index": 356,
@@ -4162,9 +4175,10 @@
             "url": "http://bit.ly/2JMx1PH",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "已有 (\\d+) 人聯署"
             },
-            "count": 0
+            "count": 486,
+            "checked": true
         },
         {
             "index": 357,
@@ -4182,7 +4196,7 @@
             "name": "佛教沈香林紀念中學學生丶校友及教職員就逃犯條例之聯署聲明",
             "url": "http://bit.ly/2I9W0ZR",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4192,40 +4206,63 @@
             "name": "下葵涌官立工業中學/下葵涌官立中學  一群校友聯署  促請政府撤回《逃犯條例》修訂",
             "url": "https://tinyurl.com/yy22j5zq",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "================================\\n\\n([^\"]*)\">",
+                    "[^\\n]+\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 40,
+            "checked": true
         },
         {
             "index": 360,
             "name": "圓玄學院妙法寺內明陳呂重德紀念中學校友、師生、家長就修訂《逃犯條例》之聯署反對聲明",
             "url": "https://forms.gle/quDLQZ1Bi1CxMDqN8",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "舊生聯署\\n([^\"]*)\">",
+                    "\\d+\\.[^\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 0
+            "count": 83,
+            "checked": true
         },
         {
             "index": 361,
             "name": "中華基督教會基智中學校友, 教職員及學生反對通過逃犯條例聯署",
             "url": "http://bit.ly/2MfryTq",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人\\n\\n([^\"]*)\">",
+                    "[^\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 0
+            "count": 242,
+            "checked": true
         },
         {
             "index": 362,
             "name": " 東華三院吳祥川紀念中學校友就要求撤回修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2KcVNaT",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人：\\(持續更新\\)\\n.+\\n([^\"]*)\">",
+                    "[^\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 0
+            "count": 176,
+            "checked": true
         },
         {
             "index": 363,
@@ -5278,6 +5315,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-01 19:01:56"
+        "updated_at": "2019-06-01 23:59:32"
     }
 }
