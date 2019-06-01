@@ -73,7 +73,8 @@ function parseHtml(content, type, argv, isDebug) {
     const match = regex.exec(content);
     if (match) {
       if (isDebug) {
-        console.log(match[1]);
+        console.log(`Matched String: ${match[0]}`);
+        console.log(`Parse Int: ${parseInt(match[1].replace(/\D/g, ''), 10)}`);
       }
       count = parseInt(match[1].replace(/\D/g, ''), 10);
     }
@@ -104,7 +105,9 @@ function parseHtml(content, type, argv, isDebug) {
           console.log(`${i}: ${v.trim()}`)
         })
       }
-      count = match.length + 1;
+      // default the offset to 1
+      const offset = argv[3] !== undefined ? argv[3] : 1;
+      count = match.length + offset;
     }
 
   }
