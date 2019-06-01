@@ -4280,10 +4280,16 @@
             "name": "伯特利中學師生及校友聯署聲明︰要求政府撤回《逃犯條例》修訂",
             "url": "http://bit.ly/2MghBVR",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "畢業年份[ ]+姓名[ ]+身份\\n([^\"]*)\">",
+                    "[^\\n]+\\n",
+                    1,
+                    0
+                ]
             },
-            "count": 0
+            "count": 5,
+            "checked": true
         },
         {
             "index": 365,
@@ -4312,17 +4318,23 @@
             "name": "一群香港紅卍字會大埔卍慈中學校友、學生或教職員就修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2WyRPjw",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人：\\n([^\"]*)\">",
+                    "[^\\n]+\\n",
+                    1,
+                    0
+                ]
             },
-            "count": 0
+            "count": 8,
+            "checked": true
         },
         {
             "index": 368,
             "name": "禮賢會彭學高紀念中學校友、學生及教職工就反對修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2WsmfUJ",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4333,16 +4345,17 @@
             "url": "http://bit.ly/2Kf89j4",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人數：(\\d+)"
             },
-            "count": 13
+            "count": 13,
+            "checked": true
         },
         {
             "index": 370,
             "name": "基督教中國佈道會聖道迦南書院  校友、學生及教師就 《逃犯條例》修訂草案之聯署聲明",
             "url": "https://forms.gle/HifihsLNasdxEU7U8",
             "parseConfig": {
-                "type": "regex",
+                "type": "todo",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4352,10 +4365,16 @@
             "name": "中華聖潔會靈風中學校友、師生反對修訂《逃犯條例》之聯署聲明",
             "url": "https://forms.gle/pu5eS6F2JkobYhMc6",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人（不定時更新）：\\n([^\"]*)\">",
+                    "[^-\\n]+\\n",
+                    1,
+                    1
+                ]
             },
-            "count": 0
+            "count": 372,
+            "checked": true
         },
         {
             "index": 372,
@@ -4373,7 +4392,7 @@
             "name": "一群九龍城浸信會禧年小學家長、校友及教職員反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2JLJi6H",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4394,7 +4413,7 @@
             "name": "天主教教徒聯署：促請政府撤回修訂《逃犯條例》",
             "url": "http://bit.ly/2HDV9BR",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4404,10 +4423,11 @@
             "name": "一群循道衞理人對修訂《逃犯條例》的回應聯署",
             "url": "http://bit.ly/2HEwZHe",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "numbered",
+                "argv": "(\\d+)[\\t]+[^\\n]+\\n"
             },
-            "count": 0
+            "count": 2142,
+            "checked": true
         },
         {
             "index": 377,
@@ -4425,10 +4445,11 @@
             "name": "一群五旬節聖潔會信徒對修訂《逃犯條例》的聯合呼籲",
             "url": "http://bit.ly/2EAbntN",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "numbered",
+                "argv": "(\\d+)\\.[^\\n]+\\n"
             },
-            "count": 0
+            "count": 936,
+            "checked": true
         },
         {
             "index": 379,
@@ -4446,10 +4467,11 @@
             "name": "一群浸信人強烈要求收回《逃犯條例》修訂聯署聲明",
             "url": "http://bit.ly/2wkWlDz",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "numbered",
+                "argv": "\\n(\\d+)\\s+[^\\n]+\\s+[^\\n]+"
             },
-            "count": 0
+            "count": 974,
+            "checked": true
         },
         {
             "index": 381,
@@ -4459,7 +4481,8 @@
                 "type": "regex",
                 "argv": "合共聯署人數\\D*(\\d+)位"
             },
-            "count": 529
+            "count": 529,
+            "checked": true
         },
         {
             "index": 382,
@@ -4508,16 +4531,17 @@
             "url": "http://bit.ly/30NXFgg",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署數目為([\\d,]+)"
             },
-            "count": 0
+            "count": 3199,
+            "checked": true
         },
         {
             "index": 387,
             "name": "香港電影美術學會 HONG KONG FILM ARTS ASSOCIATION (HKFAA)",
             "url": "https://www.facebook.com/HKFILMARTS/?__tn__=K-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R&eid=ARDlZIUEV2HYXrTEtevHrMk5Jea16YeD-wMuc7BnktiiIYfTXQObkfHtH5HUwkEuL2zFGtJ4XqWsrpOw&fref=mentions&__xts__%5B0%5D=68.ARDsIVAqf_oPf-QBLb4ZfULukB854NTSbItPFgkwW_XsVpBlqu1yKVNudEbGUVODHCqoWLJJmYhuQvTzeF_pyFhB7buwUStS9KhWodcFA54-FFGRkPMMrbgcPJxwHkgBe5BKz1A__mi4DLhMdwppBqaDeitnIgYkJDsGqz4VP0pLTqHZ9lsAaSDzCp3IKpPFOJmZKh99_un7PPurQbIny-TpTT8VwOAYpoXk6R9T4h2mf6JrjLsbZ9jR_gwbY7A6rUuKTYFs5N0MLenKO0dqcg05nkzAHtVbtK9HlBq37f6St8NM7d30itvXb_KDNWOW_kfN",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4527,7 +4551,7 @@
             "name": "就《逃犯條例》修訂建議諮詢業界意見",
             "url": "https://forms.gle/rxhjyUrpDhhuLUtN8?fbclid=IwAR13xBDeL6mKbfZ144YV2-OSlzPen0RxqC3nlCMGq5-z4NoxfRrcIpP_PKE",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4537,7 +4561,7 @@
             "name": "香港動漫同人界社會關注組 Hkacdc",
             "url": "https://www.facebook.com/acdchk/?__tn__=K-R-R-R-R-R-R-R-R-R-R-R-R-R-R-R&eid=ARB8T62f9Sdj1KBdvw-pXvKZr3XNXaXo9d8M7haTFAyiNZ8lEFAlBJLKc-dGMa0ltpm_h6ces0zSWaPW&fref=mentions&__xts__%5B0%5D=68.ARCkRPVTE2bFPrC-u_pl74PdXuYeuEkOVd1TEFE2jD4x4Q_3XsGuIBK-tFBiFWJRu2j9ArPcoVmCDIA93mdULlZeuUNP0MXaJbnYmDsTqZBZyxVZQDZIFq8zJKrP47iIcpnKQMApfsy_Qt9Tkesyw1r-k57x6XNo6Ff2j3xKk-zVBLj91NVxx2qyepcE843BeYVsIvxels-SkrQLXOX9_jJGE7ojdOf40FLEJIH8FbskMFzlwt_lTrldfyYzv17hQPZemJrO_BkSpRHrWKnVFYY6-JBwJpHTv00gBYYwcaaeZxVKzLoXblmvREHWxRfVMTm7",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4547,10 +4571,11 @@
             "name": "【撤回送中修訂 保障創作自由】動漫遊戲同人界反對修訂《逃犯條例》聯署聲明",
             "url": "https://forms.gle/kMAD1sCQEW5WydSC7",
             "parseConfig": {
-                "type": "todo",
-                "argv": "人數\\D*(\\d+)"
+                "type": "regex",
+                "argv": "聯署人數：(\\d+)"
             },
-            "count": 0
+            "count": 1095,
+            "checked": true
         },
         {
             "index": 391,
@@ -5315,6 +5340,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-01 23:59:32"
+        "updated_at": "2019-06-02 00:14:21"
     }
 }
