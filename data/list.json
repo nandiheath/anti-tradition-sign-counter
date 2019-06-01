@@ -176,7 +176,7 @@
                     2
                 ]
             },
-            "count": 477,
+            "count": 478,
             "checked": true
         },
         {
@@ -322,7 +322,7 @@
                 "type": "regex",
                 "argv": "已有(\\d+)人聯署"
             },
-            "count": 940,
+            "count": 955,
             "checked": true
         },
         {
@@ -432,7 +432,7 @@
                     1
                 ]
             },
-            "count": 88,
+            "count": 200,
             "checked": true
         },
         {
@@ -775,7 +775,7 @@
                 "type": "regex",
                 "argv": "聯署人數：~([\\d,]+)"
             },
-            "count": 1945,
+            "count": 2040,
             "checked": true
         },
         {
@@ -914,7 +914,7 @@
                     1
                 ]
             },
-            "count": 153,
+            "count": 526,
             "checked": true
         },
         {
@@ -1028,7 +1028,7 @@
                 "type": "regex",
                 "argv": "共(\\d+)人"
             },
-            "count": 1047,
+            "count": 1062,
             "checked": true
         },
         {
@@ -1152,7 +1152,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1273,
+            "count": 1286,
             "checked": true
         },
         {
@@ -1167,7 +1167,7 @@
                     1
                 ]
             },
-            "count": 1319,
+            "count": 1357,
             "checked": true
         },
         {
@@ -1178,7 +1178,7 @@
                 "type": "regex",
                 "argv": "總共有(\\d+)人聯署"
             },
-            "count": 759,
+            "count": 770,
             "checked": true
         },
         {
@@ -1204,7 +1204,7 @@
                     0
                 ]
             },
-            "count": 450,
+            "count": 476,
             "checked": true
         },
         {
@@ -1215,7 +1215,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1197,
+            "count": 1242,
             "checked": true
         },
         {
@@ -1251,7 +1251,7 @@
                     1
                 ]
             },
-            "count": 1198,
+            "count": 1215,
             "checked": true
         },
         {
@@ -1331,7 +1331,7 @@
                 "type": "regex",
                 "argv": "現時有(\\d+)人聯署"
             },
-            "count": 555,
+            "count": 607,
             "checked": true
         },
         {
@@ -1357,7 +1357,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 624,
+            "count": 636,
             "checked": true
         },
         {
@@ -1452,7 +1452,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1200,
+            "count": 1224,
             "checked": true
         },
         {
@@ -1511,7 +1511,7 @@
                 "type": "regex",
                 "argv": "一共有(\\d+)人"
             },
-            "count": 1040,
+            "count": 1051,
             "checked": true
         },
         {
@@ -1522,7 +1522,7 @@
                 "type": "regex",
                 "argv": "\\((\\d+)位）"
             },
-            "count": 1143,
+            "count": 1157,
             "checked": true
         },
         {
@@ -1559,7 +1559,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 877,
+            "count": 888,
             "checked": true
         },
         {
@@ -1613,7 +1613,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 430,
+            "count": 450,
             "checked": true
         },
         {
@@ -1645,7 +1645,7 @@
                 "type": "regex",
                 "argv": "聯署名單，共(\\d+)人"
             },
-            "count": 462,
+            "count": 563,
             "checked": true
         },
         {
@@ -1693,7 +1693,7 @@
                     1
                 ]
             },
-            "count": 341,
+            "count": 352,
             "checked": true
         },
         {
@@ -1708,7 +1708,7 @@
                     1
                 ]
             },
-            "count": 592,
+            "count": 598,
             "checked": true
         },
         {
@@ -1756,7 +1756,7 @@
                     1
                 ]
             },
-            "count": 1058,
+            "count": 1060,
             "checked": true
         },
         {
@@ -1792,7 +1792,7 @@
                 "type": "regex",
                 "argv": "有(\\d+)人聯署"
             },
-            "count": 395,
+            "count": 410,
             "checked": true
         },
         {
@@ -1877,7 +1877,7 @@
                 "type": "regex",
                 "argv": "，(\\d+)個簽名"
             },
-            "count": 914,
+            "count": 925,
             "checked": true
         },
         {
@@ -1888,7 +1888,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1148,
+            "count": 1152,
             "checked": true
         },
         {
@@ -1969,7 +1969,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1652,
+            "count": 1688,
             "checked": true
         },
         {
@@ -2002,7 +2002,7 @@
                 "type": "regex",
                 "argv": "共(\\d+)聯署"
             },
-            "count": 396,
+            "count": 399,
             "checked": true
         },
         {
@@ -2034,7 +2034,7 @@
                 "type": "regex",
                 "argv": "目前人數：(\\d+)"
             },
-            "count": 279,
+            "count": 283,
             "checked": true
         },
         {
@@ -2127,7 +2127,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 607,
+            "count": 618,
             "checked": true
         },
         {
@@ -2212,7 +2212,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 815
+            "count": 820
         },
         {
             "index": 193,
@@ -2292,7 +2292,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1180
+            "count": 1192
         },
         {
             "index": 201,
@@ -2502,7 +2502,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 0
+            "count": 6
         },
         {
             "index": 222,
@@ -2832,7 +2832,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 366
+            "count": 366,
+            "checked": true
         },
         {
             "index": 255,
@@ -2972,7 +2973,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 229
+            "count": 232
         },
         {
             "index": 269,
@@ -2982,7 +2983,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 202
+            "count": 205
         },
         {
             "index": 270,
@@ -3042,7 +3043,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 859
+            "count": 875
         },
         {
             "index": 276,
@@ -3062,7 +3063,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 375
+            "count": 379
         },
         {
             "index": 278,
@@ -3211,7 +3212,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 154
+            "count": 175
         },
         {
             "index": 293,
@@ -3351,7 +3352,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 439
+            "count": 464
         },
         {
             "index": 307,
@@ -3441,7 +3442,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 93
+            "count": 102
         },
         {
             "index": 316,
@@ -3491,7 +3492,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 68
+            "count": 75
         },
         {
             "index": 321,
@@ -3691,7 +3692,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 282
+            "count": 283
         },
         {
             "index": 341,
@@ -3761,7 +3762,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 800
+            "count": 811
         },
         {
             "index": 348,
@@ -3861,7 +3862,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 268
+            "count": 279
         },
         {
             "index": 358,
@@ -3941,7 +3942,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 268
+            "count": 279
         },
         {
             "index": 366,
@@ -4062,7 +4063,7 @@
                 "type": "regex",
                 "argv": "合共\\D*(\\d+)"
             },
-            "count": 292,
+            "count": 295,
             "checked": true
         },
         {
@@ -4416,7 +4417,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 342
+            "count": 342,
+            "checked": true
         },
         {
             "index": 413,
@@ -4434,9 +4436,10 @@
             "url": "http://bit.ly/2KiRU4b",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共\\D*(\\d+)人"
             },
-            "count": 0
+            "count": 1077,
+            "checked": true
         },
         {
             "index": 415,
@@ -4444,9 +4447,10 @@
             "url": "https://forms.gle/cpWKgu4dTccVEzqo7",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "一共有\\D*(\\d+)"
             },
-            "count": 0
+            "count": 77,
+            "checked": true
         },
         {
             "index": 416,
@@ -4464,19 +4468,21 @@
             "url": "http://bit.ly/2Wyr2Ea",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "\\D*(\\d+)人聯署"
             },
-            "count": 0
+            "count": 381,
+            "checked": true
         },
         {
             "index": 418,
-            "name": "仁愛堂陳黃淑芳紀念中學(包括小學部) 師生及校友聯署聲明︰要求政府撤回《逃犯條例》修訂",
+            "name": "仁愛堂陳黃淑芳紀念中學(包括小學部)師生及校友聯署聲明︰要求政府撤回《逃犯條例》修訂",
             "url": "http://bit.ly/2KjfLRp",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "\\D*(\\d+)人聯署"
             },
-            "count": 0
+            "count": 112,
+            "checked": true
         },
         {
             "index": 419,
@@ -4484,9 +4490,10 @@
             "url": "http://bit.ly/2KiHGAP",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人\\D*(\\d+)"
             },
-            "count": 0
+            "count": 415,
+            "checked": true
         },
         {
             "index": 420,
@@ -4536,7 +4543,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 202
+            "count": 202,
+            "checked": true
         },
         {
             "index": 425,
@@ -4586,7 +4594,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 144
+            "count": 144,
+            "checked": true
         },
         {
             "index": 430,
@@ -4614,9 +4623,10 @@
             "url": "https://forms.gle/A7xzcbBtB64MiY918",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共\\D*(\\d+)個有效簽署"
             },
-            "count": 0
+            "count": 468,
+            "checked": true
         },
         {
             "index": 433,
@@ -4664,9 +4674,10 @@
             "url": "http://bit.ly/2WvkWEx",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "已經錄得超過\\D*(\\d+)"
             },
-            "count": 0
+            "count": 140,
+            "checked": true
         },
         {
             "index": 438,
@@ -4676,7 +4687,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 96
+            "count": 96,
+            "checked": true
         },
         {
             "index": 439,
@@ -4706,7 +4718,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 67
+            "count": 70,
+            "checked": true
         },
         {
             "index": 442,
@@ -4746,7 +4759,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 173
+            "count": 173,
+            "checked": true
         },
         {
             "index": 446,
@@ -4756,7 +4770,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 152
+            "count": 152,
+            "checked": true
         },
         {
             "index": 447,
@@ -4776,7 +4791,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 227
+            "count": 243,
+            "checked": true
         },
         {
             "index": 449,
@@ -4794,9 +4810,10 @@
             "url": "https://forms.gle/Q3NSqfNbk8B6EEyC6",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "現有\\D*(\\d+)"
             },
-            "count": 0
+            "count": 57,
+            "checked": true
         },
         {
             "index": 451,
@@ -4804,9 +4821,10 @@
             "url": "https://forms.gle/3bBittb8AnzqojcQ9",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "目前已收取聯署數：\\D*(\\d+)"
             },
-            "count": 0
+            "count": 41,
+            "checked": true
         },
         {
             "index": 452,
@@ -4826,7 +4844,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 44
+            "count": 47,
+            "checked": true
         },
         {
             "index": 454,
@@ -4836,7 +4855,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 170
+            "count": 170,
+            "checked": true
         },
         {
             "index": 455,
@@ -4850,6 +4870,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-01 09:54:06"
+        "updated_at": "2019-06-01 01:47:55"
     }
 }
