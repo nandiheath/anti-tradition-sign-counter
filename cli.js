@@ -66,12 +66,15 @@ function getDownloadFunc() {
 }
 
 
-function parseHtml(content, type, argv) {
+function parseHtml(content, type, argv, isDebug) {
   let count = 0;
   if (type === 'regex') {
     const regex = new RegExp(argv, 'g');
     const match = regex.exec(content);
     if (match) {
+      if (isDebug) {
+        console.log(match[1]);
+      }
       count = parseInt(match[1].replace(/\D/g, ''), 10);
     }
   } else if (type === 'count') {
@@ -84,6 +87,9 @@ function parseHtml(content, type, argv) {
     let max = 0;
     while (match = regex.exec(content)) {
       max = Math.max(max, match[1]);
+      if (isDebug) {
+        console.log(match[1]);
+      }
     }
     count = max;
   } else if (type === 'count_in') {
@@ -93,6 +99,11 @@ function parseHtml(content, type, argv) {
       regex = new RegExp(argv[1], 'g');
       const index = argv[2];
       match = match[index].match(regex);
+      if (isDebug) {
+        match.forEach((v, i) => {
+          console.log(`${i}: ${v.trim()}`)
+        })
+      }
       count = match.length + 1;
     }
 
@@ -103,7 +114,7 @@ function parseHtml(content, type, argv) {
 /**
  *
  */
-function getCountFunc(index, isLocal) {
+function getCountFunc(index, isLocal, isDebug) {
   return async.asyncify(async (item, key) => {
     if (index && index != key) {
       return;
@@ -127,7 +138,7 @@ function getCountFunc(index, isLocal) {
       const {
         type, argv
       } = item.parseConfig
-      item.count = parseHtml(content, type, argv);
+      item.count = parseHtml(content, type, argv, isDebug);
       console.log(`${item.name} :${item.count}`);
 
     } catch (error) {
@@ -144,6 +155,7 @@ program
   .option('-l, --local', 'parse the data from local')
   .option('-c, --count', 'display the number (if any)')
   .option('-i, --index <index>', 'run the index only')
+  .option('--debug', 'output the debug messages')
   .action(async (cmd) => {
 
     let list;
@@ -162,7 +174,7 @@ program
         console.log(error);
       })
     } else if (cmd.count) {
-      async.eachOfLimit(list, 20, getCountFunc(cmd.index, cmd.local), (error) => {
+      async.eachOfLimit(list, 20, getCountFunc(cmd.index, cmd.local, cmd.debug), (error) => {
         fs.writeFileSync('./data/list.json', JSON.stringify({ list: list, meta: { updated_at: moment().tz('Asia/Hong_Kong').format('YYYY-MM-DD HH:mm:ss') } }, null, 4));
       })
     }
