@@ -1728,9 +1728,10 @@
             "url": "http://bit.ly/2Wd15ur",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人：(\\d+)人"
             },
-            "count": 0
+            "count": 528,
+            "checked": true
         },
         {
             "index": 152,
@@ -1738,19 +1739,25 @@
             "url": "http://bit.ly/2YSFELP",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共(\\d+)人"
             },
-            "count": 0
+            "count": 471,
+            "checked": true
         },
         {
             "index": 153,
             "name": "一群何明華會督銀禧中學校友、學生及教職員反對修訂《逃犯條例》聯署",
             "url": "http://bit.ly/2QtkFfG",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署師生校友﹕數字為畢業年份\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 1052,
+            "checked": true
         },
         {
             "index": 154,
@@ -1758,19 +1765,24 @@
             "url": "http://bit.ly/2HGnmYr",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共(\\d+)人"
             },
-            "count": 0
+            "count": 830,
+            "checked": true
         },
         {
             "index": 155,
             "name": "五邑司徒浩中學學生、教職員及校友對修訂《逃犯條例》之聯合署聲明",
             "url": "http://bit.ly/2HETzzm",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "todo",
+                "argv": [
+                    "聯署人：[^\\n]+\\n\\n([^\"]*)\">",
+                    "[\\w\\s]+\\((\\d+|F\\.\\d)\\)\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 286
         },
         {
             "index": 156,
@@ -1778,29 +1790,40 @@
             "url": "http://bit.ly/2W7Y6n2",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "有(\\d+)人聯署"
             },
-            "count": 0
+            "count": 395,
+            "checked": true
         },
         {
             "index": 157,
             "name": "鄭植之中學學生、教職員、校友就修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2Mb64qR",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人（持續更新／人手更新需時，請見諒）：<br>.+?(?=</p>)",
+                    "<br>",
+                    0
+                ]
             },
-            "count": 0
+            "count": 697,
+            "checked": true
         },
         {
             "index": 158,
             "name": "天主教母佑會蕭明中學學生、校友、教職員及前教職員反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2JEDM5S",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "姓名\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 927,
+            "checked": true
         },
         {
             "index": 159,
@@ -1808,9 +1831,10 @@
             "url": "http://bit.ly/2YVHImC",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人數（[^\n]+\\)\\s+:\\s+(\\d+)"
             },
-            "count": 2019
+            "count": 147,
+            "checked": true
         },
         {
             "index": 160,
@@ -1820,7 +1844,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 315
+            "count": 315,
+            "checked": true
         },
         {
             "index": 161,
@@ -1830,7 +1855,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 815
+            "count": 815,
+            "checked": true
         },
         {
             "index": 162,
@@ -1838,9 +1864,10 @@
             "url": "http://bit.ly/2QvOE6Y",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": " 已有(\\d+)人聯署"
             },
-            "count": 0
+            "count": 111,
+            "checked": true
         },
         {
             "index": 163,
@@ -1848,9 +1875,10 @@
             "url": "http://bit.ly/2HGsL1S",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "，(\\d+)個簽名"
             },
-            "count": 4
+            "count": 914,
+            "checked": true
         },
         {
             "index": 164,
@@ -1860,7 +1888,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1126
+            "count": 1126,
+            "checked": true
         },
         {
             "index": 165,
@@ -1868,9 +1897,10 @@
             "url": "http://bit.ly/2JMacLK",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "暫時共有\\s+(\\d+)\\s+個有效聯署"
             },
-            "count": 0
+            "count": 805,
+            "checked": true
         },
         {
             "index": 166,
@@ -1880,7 +1910,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1200
+            "count": 1200,
+            "checked": true
         },
         {
             "index": 167,
@@ -1888,9 +1919,10 @@
             "url": "http://bit.ly/2X8RoJD",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共收集到(\\d+)聯署"
             },
-            "count": 0
+            "count": 743,
+            "checked": true
         },
         {
             "index": 168,
@@ -1900,7 +1932,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 303
+            "count": 303,
+            "checked": true
         },
         {
             "index": 169,
@@ -1910,17 +1943,23 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1343
+            "count": 1343,
+            "checked": true
         },
         {
             "index": 170,
             "name": "一群宣道中學老師及校友反對修訂《逃犯條例》",
             "url": "http://bit.ly/2JLqRz1",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署: [^\\n]+\\n姓名\\n姓名\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 752,
+            "checked": true
         },
         {
             "index": 171,
@@ -1930,7 +1969,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1652
+            "count": 1652,
+            "checked": true
         },
         {
             "index": 172,
@@ -1940,7 +1980,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 635
+            "count": 635,
+            "checked": true
         },
         {
             "index": 173,
@@ -1950,7 +1991,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 830
+            "count": 830,
+            "checked": true
         },
         {
             "index": 174,
@@ -1958,9 +2000,10 @@
             "url": "http://bit.ly/2YQISj5",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共(\\d+)聯署"
             },
-            "count": 2014
+            "count": 396,
+            "checked": true
         },
         {
             "index": 175,
@@ -1968,16 +2011,17 @@
             "url": "https://forms.gle/kEna1ZCBwWRZUkC67",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "有(\\d+)名師生簽署"
             },
-            "count": 0
+            "count": 411,
+            "checked": true
         },
         {
             "index": 176,
             "name": "Smhyc關注組",
             "url": "https://www.facebook.com/Smhyc%E9%97%9C%E6%B3%A8%E7%B5%84-279572479591876/?__tn__=K-R-R-R-R-R-R&eid=ARCMJjekbTAm-0DwblIFhORLfrrrLVyCrVDAR2mukvZ9LvBKRcDpBcdlqlMcLU3EMxcT7s1u2fvEUxS3&fref=mentions&__xts__%5B0%5D=68.ARAsOVD-wipWuvHeMpEchRVcdU4xWE_l4zMsQXQnjl1I9UMoVJk7NPR1qvhZ5tmroZBhZwAjwBiGqDpyN0dq4yQg8DNLfmsxQ_-hpTmabp_9610-dy7l3jaL7GjpTDkEIT9MfWvHf5kSODSjY5dAgkIkCpnSsRQRB5DmF4oY4dZvVzmjF0sdklTJSS1-gwxRJsTOGDIPJJuS3klNX0scUghM1n99fHrAxmDTT37FcOW6TG_BlgVEoFo9KC6-TQflXvmnBNa31S9czjhdXxNUNdaITKe0cuBmRjtqsiphDVYpG1BG667ofZ2q9vGEuQia5A-c",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -1988,9 +2032,10 @@
             "url": "http://bit.ly/2Me0yna",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "目前人數：(\\d+)"
             },
-            "count": 250
+            "count": 279,
+            "checked": true
         },
         {
             "index": 178,
@@ -4352,6 +4397,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-01 12:07:48"
+        "updated_at": "2019-06-01 08:14:01"
     }
 }
