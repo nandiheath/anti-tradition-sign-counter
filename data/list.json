@@ -3555,17 +3555,24 @@
                 "type": "regex",
                 "argv": "共(\\d+)人"
             },
-            "count": 285
+            "count": 285,
+            "checked": true
         },
         {
             "index": 305,
             "name": "嶺南衡怡紀念中學校友及師生反對《2019年逃犯及刑事事宜相互法律協助法例（修訂）條例草案 》聯署聲明",
             "url": "http://bit.ly/2Wdqtjs",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人（排名不分先後\\) ：\\n([^\"]*)\">",
+                    "[^：\\n]+\\n",
+                    1,
+                    0
+                ]
             },
-            "count": 0
+            "checked": true,
+            "count": 89
         },
         {
             "index": 306,
@@ -3575,7 +3582,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 464
+            "count": 464,
+            "checked": true
         },
         {
             "index": 307,
@@ -3585,24 +3593,26 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 944
+            "count": 944,
+            "checked": true
         },
         {
             "index": 308,
             "name": "嶺南中學校友反對修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2HJ3d4j",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "numbered",
+                "argv": "(\\d+)\\s+[^\\n]*\\s+\\d{4}"
             },
-            "count": 0
+            "count": 114,
+            "checked": true
         },
         {
             "index": 309,
             "name": "孔教學院大成何郭佩珍中學校友反對修訂《逃犯條例》聯合聲明",
             "url": "http://bit.ly/2IaaNnt",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -3615,7 +3625,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 313
+            "count": 313,
+            "checked": true
         },
         {
             "index": 311,
@@ -3623,9 +3634,10 @@
             "url": "http://forms.gle/Kf9teniiFDuiMCbG9",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "現時有(\\d+)人"
             },
-            "count": 0
+            "count": 99,
+            "checked": true
         },
         {
             "index": 312,
@@ -3633,9 +3645,10 @@
             "url": "http://bit.ly/2EJeD61",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "\\n共(\\d+)人"
             },
-            "count": 0
+            "count": 205,
+            "checked": true
         },
         {
             "index": 313,
@@ -3645,17 +3658,24 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 212
+            "count": 212,
+            "checked": true
         },
         {
             "index": 314,
             "name": "退此一步即無死所——一群南屯門官立中學校友與學生反對《逃犯條例》與《刑事事宜相互法律協助》條例修訂及譴責校友何俊賢立法會議員之聯署聲明",
             "url": "http://bit.ly/2I4i4VK",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人士︰\\n([^\"]*)\">",
+                    "[^：\\n]+\\n",
+                    1,
+                    0
+                ]
             },
-            "count": 0
+            "count": 507,
+            "checked": true
         },
         {
             "index": 315,
@@ -3665,7 +3685,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 102
+            "count": 102,
+            "checked": true
         },
         {
             "index": 316,
@@ -3673,9 +3694,10 @@
             "url": "https://forms.gle/DuLH1mHAFnGqY4Yc7",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "，(\\d+)\\s+Co-signatories"
             },
-            "count": 0
+            "count": 417,
+            "checked": true
         },
         {
             "index": 317,
@@ -3685,7 +3707,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 420
+            "count": 420,
+            "checked": true
         },
         {
             "index": 318,
@@ -3695,7 +3718,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 611
+            "count": 611,
+            "checked": true
         },
         {
             "index": 319,
@@ -3703,9 +3727,10 @@
             "url": "https://forms.gle/GGJTcqfJU9qWQJ426",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "以下共(\\d+)名聯署者"
             },
-            "count": 6
+            "count": 423,
+            "checked": true
         },
         {
             "index": 320,
@@ -3715,7 +3740,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 75
+            "count": 75,
+            "checked": true
         },
         {
             "index": 321,
@@ -3723,9 +3749,10 @@
             "url": "http://bit.ly/2JLb4k4",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人： (\\d+)位"
             },
-            "count": 0
+            "count": 581,
+            "checked": true
         },
         {
             "index": 322,
@@ -5171,6 +5198,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-01 17:20:50"
+        "updated_at": "2019-06-01 17:35:13"
     }
 }
