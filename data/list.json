@@ -2327,10 +2327,15 @@
             "name": "賽馬會體藝中學校友、學生及教師就《逃犯條例》修訂草案之聯署聲明",
             "url": "http://bit.ly/2wnEUCb",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署名單持續更新：\\n[^\\n]*\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 895,
+            "checked": true
         },
         {
             "index": 203,
@@ -2338,9 +2343,10 @@
             "url": "http://bit.ly/2YW9241",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人數[^\\n]+：(\\d+)"
             },
-            "count": 2019
+            "count": 931,
+            "checked": true
         },
         {
             "index": 204,
@@ -2348,19 +2354,25 @@
             "url": "https://forms.gle/zyN5BhPNZaxFPcxQA",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署名單[^\\n]+：(\\d+)人"
             },
-            "count": 6
+            "count": 704,
+            "checked": true
         },
         {
             "index": 205,
             "name": "《反送中 保人權》 香港四邑商工總會黃棣珊紀念中學學生、教職員及校友就撤回《逃犯條例》 修訂之聯署聲明",
             "url": "http://bit.ly/2wrgPL4",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署人：[^\\n]+\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 644,
+            "checked": true
         },
         {
             "index": 206,
@@ -2368,9 +2380,10 @@
             "url": "http://bit.ly/2WssXd3",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "當中(\\d+)項有效"
             },
-            "count": 0
+            "count": 720,
+            "checked": true
         },
         {
             "index": 207,
@@ -2378,9 +2391,10 @@
             "url": "http://bit.ly/30OB2Ip",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共收到(\\d+)個聯署"
             },
-            "count": 0
+            "count": 664,
+            "checked": true
         },
         {
             "index": 208,
@@ -2390,7 +2404,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 585
+            "count": 585,
+            "checked": true
         },
         {
             "index": 209,
@@ -2398,9 +2413,10 @@
             "url": "http://bit.ly/2QvgkbK",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人數[^\\n]+：(\\d+)"
             },
-            "count": 2019
+            "count": 102,
+            "checked": true
         },
         {
             "index": 210,
@@ -2408,9 +2424,10 @@
             "url": "https://bit.ly/2HFtss9",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": " 共\\s+(\\d+)\\s+位聯署"
             },
-            "count": 2000
+            "count": 238,
+            "checked": true
         },
         {
             "index": 211,
@@ -2418,9 +2435,10 @@
             "url": "http://bit.ly/2YPzOLp",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人 / Petitioner ：(\\d+)"
             },
-            "count": 0
+            "count": 832,
+            "checked": true
         },
         {
             "index": 212,
@@ -2430,7 +2448,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 773
+            "count": 773,
+            "checked": true
         },
         {
             "index": 213,
@@ -2440,7 +2459,8 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 700
+            "count": 700,
+            "checked": true
         },
         {
             "index": 214,
@@ -2448,9 +2468,10 @@
             "url": "http://bit.ly/2HH2jF9",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "共\\s+(\\d+)\\s+人"
             },
-            "count": 0
+            "count": 308,
+            "checked": true
         },
         {
             "index": 215,
@@ -2458,9 +2479,10 @@
             "url": "http://bit.ly/2HIQUoE",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "WE HAVE (\\d+) SIGNATORIES!"
             },
-            "count": 0
+            "count": 589,
+            "checked": true
         },
         {
             "index": 216,
@@ -2468,19 +2490,25 @@
             "url": "https://forms.gle/fmGwuUG6fF2shFcR9",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人及畢業年份[^\\n]+，(\\d+)人"
             },
-            "count": 0
+            "count": 88,
+            "checked": true
         },
         {
             "index": 217,
             "name": "香港各國際、英基屬下學校校友就修訂《逃犯條例》之聯署聲明 International and ESF schools students&#39; statement on Extradition Law Amendment in Hong Kong",
             "url": "http://bit.ly/2XiSFyd",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "畢業年份\\n([^\"]*)\">",
+                    "\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 311,
+            "checked": true
         },
         {
             "index": 218,
@@ -2488,9 +2516,10 @@
             "url": "http://bit.ly/2YXEEq3",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人：(\\d+)"
             },
-            "count": 0
+            "count": 543,
+            "checked": true
         },
         {
             "index": 219,
@@ -2498,9 +2527,10 @@
             "url": "https://forms.gle/ok2U1whuzdkefsri6",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人數[^\\n]+：(\\d+)"
             },
-            "count": 2019
+            "count": 493,
+            "checked": true
         },
         {
             "index": 220,
@@ -2508,9 +2538,10 @@
             "url": "http://bit.ly/2VVJlP9",
             "parseConfig": {
                 "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "argv": "聯署人：[^\\n]+，(\\d+)人"
             },
-            "count": 0
+            "count": 709,
+            "checked": true
         },
         {
             "index": 221,
@@ -4888,6 +4919,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-01 02:07:00"
+        "updated_at": "2019-06-01 02:17:42"
     }
 }
