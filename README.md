@@ -28,6 +28,9 @@ node cli.js parse -d
 
 # Run only with the specified index
 node cli.js parse -c -l -i [index]
+
+# Debug mode
+node cli.js parse -c -l -i [index] --debug
 ```
 
 Now support 4 `type` of regex
@@ -66,7 +69,8 @@ Kwan Man Ho	校友	BBA	2011
     "argv": [
         "聯署人([^\\n]*)：([^\"]*)\">", // extract the content. 
         "\\n", // each new line count as 1 record
-        2 // the matching group of content is index[2]. group[0] = original content, group[1] = ([^\\n]*) i.e. timestamp
+        2, // the matching group of content is index[2]. group[0] = original content, group[1] = ([^\\n]*) i.e. timestamp
+        0 // offset. Default: 1
     ]
 },
 ```
