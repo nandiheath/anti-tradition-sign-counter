@@ -138,7 +138,7 @@ function getCountFunc(index, isLocal, isDebug) {
 
       const matchTitle = content.match(/<title>(.*?)<\/title>/i);
       if (matchTitle) {
-        item.name = matchTitle[1]
+        item.name = matchTitle[1].trim()
       }
 
       const {

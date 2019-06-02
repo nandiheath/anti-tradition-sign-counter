@@ -241,7 +241,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 3747,
+            "count": 3763,
             "checked": true
         },
         {
@@ -325,7 +325,7 @@
                 "type": "regex",
                 "argv": "已有(\\d+)人聯署"
             },
-            "count": 961,
+            "count": 979,
             "checked": true
         },
         {
@@ -403,13 +403,13 @@
         },
         {
             "index": 36,
-            "name": " 恒大學生、教職員、校友就反對政府修訂《逃犯條例》之聯署聲明",
+            "name": "恒大學生、教職員、校友就反對政府修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2QtVBoZ",
             "parseConfig": {
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1082,
+            "count": 1100,
             "checked": true
         },
         {
@@ -420,7 +420,7 @@
                 "type": "regex",
                 "argv": "聯署暫有(\\d+)人"
             },
-            "count": 238,
+            "count": 241,
             "checked": true
         },
         {
@@ -446,7 +446,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 658,
+            "count": 693,
             "checked": true
         },
         {
@@ -503,7 +503,7 @@
         },
         {
             "index": 44,
-            "name": "教育界聲明：要求政府收回《逃犯條例(修訂)草案》Statement of the education sector: Demanding government withdrawal of the Fugitive Offenders Ordinance amendment bill ",
+            "name": "教育界聲明：要求政府收回《逃犯條例(修訂)草案》Statement of the education sector: Demanding government withdrawal of the Fugitive Offenders Ordinance amendment bill",
             "url": "http://bit.ly/2McUOdD",
             "parseConfig": {
                 "type": "unknown",
@@ -534,7 +534,7 @@
                 "type": "regex",
                 "argv": "聯署(\\d+)人"
             },
-            "count": 573,
+            "count": 598,
             "checked": true
         },
         {
@@ -549,7 +549,7 @@
                     1
                 ]
             },
-            "count": 267,
+            "count": 286,
             "checked": true
         },
         {
@@ -614,7 +614,7 @@
         },
         {
             "index": 54,
-            "name": "反對修訂《逃犯條例》中學關注組　　",
+            "name": "反對修訂《逃犯條例》中學關注組",
             "url": "https://bit.ly/2JGUhhI",
             "parseConfig": {
                 "type": "unknown",
@@ -656,7 +656,7 @@
         },
         {
             "index": 58,
-            "name": "聖類斯中學校友、師生就修訂《逃犯條例》之聯署聲明",
+            "name": "一群聖類斯中學校友、師生就修訂《逃犯條例》之聯署聲明",
             "url": "https://bit.ly/30KGQml",
             "parseConfig": {
                 "type": "regex",
@@ -705,7 +705,7 @@
                 "type": "regex",
                 "argv": "(\\d+)個簽名"
             },
-            "count": 930,
+            "count": 959,
             "checked": true
         },
         {
@@ -726,7 +726,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1176,
+            "count": 1208,
             "checked": true
         },
         {
@@ -778,7 +778,7 @@
                 "type": "regex",
                 "argv": "聯署人數：~([\\d,]+)"
             },
-            "count": 2040,
+            "count": 2080,
             "checked": true
         },
         {
@@ -836,7 +836,7 @@
                 "type": "regex",
                 "argv": "現時共(\\d+)人參與聯署"
             },
-            "count": 956,
+            "count": 987,
             "checked": true
         },
         {
@@ -902,7 +902,7 @@
                 "type": "regex",
                 "argv": "共有(\\d+)人聯署"
             },
-            "count": 1376,
+            "count": 1395,
             "checked": true
         },
         {
@@ -917,7 +917,7 @@
                     1
                 ]
             },
-            "count": 530,
+            "count": 533,
             "checked": true
         },
         {
@@ -928,7 +928,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1100,
+            "count": 1130,
             "checked": true
         },
         {
@@ -981,7 +981,7 @@
         },
         {
             "index": 87,
-            "name": "香港華仁書院舊生、學生及教師就《逃犯條例》修訂草案之聯署聲明 ",
+            "name": "香港華仁書院舊生、學生及教師就《逃犯條例》修訂草案之聯署聲明",
             "url": "http://bit.ly/2W7gg8u",
             "parseConfig": {
                 "type": "regex",
@@ -998,7 +998,7 @@
                 "type": "regex",
                 "argv": "聯署人：\\D*(\\d+)人"
             },
-            "count": 1517,
+            "count": 1556,
             "checked": true
         },
         {
@@ -1020,7 +1020,7 @@
                 "type": "regex",
                 "argv": "聯署人：(\\d+)"
             },
-            "count": 1779,
+            "count": 1810,
             "checked": true
         },
         {
@@ -1066,7 +1066,7 @@
                     1
                 ]
             },
-            "count": 697,
+            "count": 716,
             "checked": true
         },
         {
@@ -1077,7 +1077,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 803,
+            "count": 890,
             "checked": true
         },
         {
@@ -1097,7 +1097,7 @@
         },
         {
             "index": 97,
-            "name": "聖保羅書院校友、學生反對修訂《逃犯條例》聯署聲明                      ",
+            "name": "聖保羅書院校友、學生反對修訂《逃犯條例》聯署聲明",
             "url": "https://forms.gle/WPXNPi6GfBQs5oeS6",
             "parseConfig": {
                 "type": "regex",
@@ -1144,7 +1144,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1358,
+            "count": 1366,
             "checked": true
         },
         {
@@ -1155,7 +1155,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1286,
+            "count": 1305,
             "checked": true
         },
         {
@@ -1181,7 +1181,7 @@
                 "type": "regex",
                 "argv": "總共有(\\d+)人聯署"
             },
-            "count": 770,
+            "count": 791,
             "checked": true
         },
         {
@@ -1207,7 +1207,7 @@
                     0
                 ]
             },
-            "count": 480,
+            "count": 482,
             "checked": true
         },
         {
@@ -1218,7 +1218,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1242,
+            "count": 1297,
             "checked": true
         },
         {
@@ -1290,7 +1290,7 @@
                 "type": "regex",
                 "argv": "聯署人數共(\\d+)人"
             },
-            "count": 1141,
+            "count": 1168,
             "checked": true
         },
         {
@@ -1312,7 +1312,7 @@
                 "type": "regex",
                 "argv": "聯署人數([\\d,]+)人"
             },
-            "count": 1192,
+            "count": 1214,
             "checked": true
         },
         {
@@ -1328,7 +1328,7 @@
         },
         {
             "index": 117,
-            "name": "【彩虹邨天主教英文中學】校友、學生及教職員反對《逃犯條例》聯署聲明 ",
+            "name": "【彩虹邨天主教英文中學】校友、學生及教職員反對《逃犯條例》聯署聲明",
             "url": "https://forms.gle/Bi5czXN5K5gyzR7g7",
             "parseConfig": {
                 "type": "regex",
@@ -1349,7 +1349,7 @@
                     1
                 ]
             },
-            "count": 440,
+            "count": 503,
             "checked": true
         },
         {
@@ -1382,7 +1382,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 808,
+            "count": 827,
             "checked": true
         },
         {
@@ -1397,7 +1397,7 @@
                     1
                 ]
             },
-            "count": 783,
+            "count": 823,
             "checked": true
         },
         {
@@ -1433,7 +1433,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 703,
+            "count": 788,
             "checked": true
         },
         {
@@ -1444,7 +1444,7 @@
                 "type": "regex",
                 "argv": "聯署人數[^\\n]*：(\\d+)"
             },
-            "count": 835,
+            "count": 870,
             "checked": true
         },
         {
@@ -1455,7 +1455,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1224,
+            "count": 1232,
             "checked": true
         },
         {
@@ -1514,7 +1514,7 @@
                 "type": "regex",
                 "argv": "一共有(\\d+)人"
             },
-            "count": 1064,
+            "count": 1075,
             "checked": true
         },
         {
@@ -1525,7 +1525,7 @@
                 "type": "regex",
                 "argv": "\\((\\d+)位）"
             },
-            "count": 1157,
+            "count": 1187,
             "checked": true
         },
         {
@@ -1540,7 +1540,7 @@
                     1
                 ]
             },
-            "count": 605,
+            "count": 696,
             "checked": true
         },
         {
@@ -1562,7 +1562,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 888,
+            "count": 909,
             "checked": true
         },
         {
@@ -1594,7 +1594,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1255,
+            "count": 1261,
             "checked": true
         },
         {
@@ -1659,7 +1659,7 @@
                 "type": "regex",
                 "argv": "聯署名單：\\((\\d+)人"
             },
-            "count": 1610,
+            "count": 1641,
             "checked": true
         },
         {
@@ -1670,7 +1670,7 @@
                 "type": "regex",
                 "argv": "聯署人數：(\\d+)人"
             },
-            "count": 588,
+            "count": 617,
             "checked": true
         },
         {
@@ -1696,7 +1696,7 @@
                     1
                 ]
             },
-            "count": 352,
+            "count": 355,
             "checked": true
         },
         {
@@ -1759,7 +1759,7 @@
                     1
                 ]
             },
-            "count": 1060,
+            "count": 1096,
             "checked": true
         },
         {
@@ -1795,7 +1795,7 @@
                 "type": "regex",
                 "argv": "有(\\d+)人聯署"
             },
-            "count": 410,
+            "count": 419,
             "checked": true
         },
         {
@@ -1810,7 +1810,7 @@
                     0
                 ]
             },
-            "count": 729,
+            "count": 733,
             "checked": true
         },
         {
@@ -1825,7 +1825,7 @@
                     1
                 ]
             },
-            "count": 927,
+            "count": 944,
             "checked": true
         },
         {
@@ -1836,7 +1836,7 @@
                 "type": "regex",
                 "argv": "聯署人數（[^\n]+\\)\\s+:\\s+(\\d+)"
             },
-            "count": 147,
+            "count": 155,
             "checked": true
         },
         {
@@ -1880,7 +1880,7 @@
                 "type": "regex",
                 "argv": "，(\\d+)個簽名"
             },
-            "count": 929,
+            "count": 952,
             "checked": true
         },
         {
@@ -1902,7 +1902,7 @@
                 "type": "regex",
                 "argv": "暫時共有\\s+(\\d+)\\s+個有效聯署"
             },
-            "count": 812,
+            "count": 818,
             "checked": true
         },
         {
@@ -1924,7 +1924,7 @@
                 "type": "regex",
                 "argv": "共收集到(\\d+)聯署"
             },
-            "count": 813,
+            "count": 827,
             "checked": true
         },
         {
@@ -1935,7 +1935,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 326,
+            "count": 329,
             "checked": true
         },
         {
@@ -1972,7 +1972,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1706,
+            "count": 1721,
             "checked": true
         },
         {
@@ -1983,7 +1983,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 635,
+            "count": 823,
             "checked": true
         },
         {
@@ -1994,7 +1994,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 830,
+            "count": 853,
             "checked": true
         },
         {
@@ -2037,7 +2037,7 @@
                 "type": "regex",
                 "argv": "目前人數：(\\d+)"
             },
-            "count": 284,
+            "count": 293,
             "checked": true
         },
         {
@@ -2083,7 +2083,7 @@
                     1
                 ]
             },
-            "count": 479,
+            "count": 491,
             "checked": true
         },
         {
@@ -2130,7 +2130,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 618,
+            "count": 632,
             "checked": true
         },
         {
@@ -2156,7 +2156,7 @@
                     1
                 ]
             },
-            "count": 158,
+            "count": 177,
             "checked": true
         },
         {
@@ -2215,18 +2215,18 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 820,
+            "count": 842,
             "checked": true
         },
         {
             "index": 193,
-            "name": "旅港開平商會中學校友、師生就修訂《逃犯條例》之聯署聲明 ",
+            "name": "旅港開平商會中學校友、師生就修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2wnFwrD",
             "parseConfig": {
                 "type": "regex",
                 "argv": "聯署人：(\\d+)位"
             },
-            "count": 981,
+            "count": 1011,
             "checked": true
         },
         {
@@ -2274,7 +2274,7 @@
                     1
                 ]
             },
-            "count": 689,
+            "count": 807,
             "checked": true
         },
         {
@@ -2311,7 +2311,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1192,
+            "count": 1211,
             "checked": true
         },
         {
@@ -2337,7 +2337,7 @@
                     1
                 ]
             },
-            "count": 909,
+            "count": 911,
             "checked": true
         },
         {
@@ -2385,7 +2385,7 @@
                 "type": "regex",
                 "argv": "當中(\\d+)項有效"
             },
-            "count": 720,
+            "count": 739,
             "checked": true
         },
         {
@@ -2396,7 +2396,7 @@
                 "type": "regex",
                 "argv": "共收到(\\d+)個聯署"
             },
-            "count": 676,
+            "count": 690,
             "checked": true
         },
         {
@@ -2407,7 +2407,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 592,
+            "count": 602,
             "checked": true
         },
         {
@@ -2418,18 +2418,18 @@
                 "type": "regex",
                 "argv": "聯署人數[^\\n]+：(\\d+)"
             },
-            "count": 102,
+            "count": 103,
             "checked": true
         },
         {
             "index": 210,
-            "name": "東莞工商總會劉百樂中學校友、學生、教師及前教職員反對修訂《逃犯條例》聯署聲明 ",
+            "name": "東莞工商總會劉百樂中學校友、學生、教師及前教職員反對修訂《逃犯條例》聯署聲明",
             "url": "https://bit.ly/2HFtss9",
             "parseConfig": {
                 "type": "regex",
                 "argv": " 共\\s+(\\d+)\\s+位聯署"
             },
-            "count": 250,
+            "count": 252,
             "checked": true
         },
         {
@@ -2440,7 +2440,7 @@
                 "type": "regex",
                 "argv": "聯署人 / Petitioner ：(\\d+)"
             },
-            "count": 832,
+            "count": 987,
             "checked": true
         },
         {
@@ -2451,7 +2451,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 773,
+            "count": 809,
             "checked": true
         },
         {
@@ -2462,7 +2462,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 709,
+            "count": 718,
             "checked": true
         },
         {
@@ -2473,7 +2473,7 @@
                 "type": "regex",
                 "argv": "共\\s+(\\d+)\\s+人"
             },
-            "count": 308,
+            "count": 318,
             "checked": true
         },
         {
@@ -2484,7 +2484,7 @@
                 "type": "regex",
                 "argv": "WE HAVE (\\d+) SIGNATORIES!"
             },
-            "count": 589,
+            "count": 692,
             "checked": true
         },
         {
@@ -2510,7 +2510,7 @@
                     1
                 ]
             },
-            "count": 311,
+            "count": 319,
             "checked": true
         },
         {
@@ -2532,7 +2532,7 @@
                 "type": "regex",
                 "argv": "聯署人數[^\\n]+：(\\d+)"
             },
-            "count": 496,
+            "count": 509,
             "checked": true
         },
         {
@@ -2554,7 +2554,7 @@
                 "type": "regex",
                 "argv": "(\\d+)人已聯署"
             },
-            "count": 577,
+            "count": 584,
             "checked": true
         },
         {
@@ -2584,7 +2584,7 @@
                     1
                 ]
             },
-            "count": 31,
+            "count": 34,
             "checked": true
         },
         {
@@ -2632,7 +2632,7 @@
                 "type": "regex",
                 "argv": "聯署人數[^\\n]+:\\s+(\\d+)"
             },
-            "count": 381,
+            "count": 400,
             "checked": true
         },
         {
@@ -2643,7 +2643,7 @@
                 "type": "regex",
                 "argv": "聯署人數 Number of Co-signers[^\\n]+：(\\d+)"
             },
-            "count": 97,
+            "count": 99,
             "checked": true
         },
         {
@@ -2669,7 +2669,7 @@
                     1
                 ]
             },
-            "count": 172,
+            "count": 178,
             "checked": true
         },
         {
@@ -2694,7 +2694,7 @@
                     1
                 ]
             },
-            "count": 80,
+            "count": 86,
             "checked": true
         },
         {
@@ -2705,7 +2705,7 @@
                 "type": "regex",
                 "argv": "聯署人：(\\d+)人"
             },
-            "count": 732,
+            "count": 728,
             "checked": true
         },
         {
@@ -2716,7 +2716,7 @@
                 "type": "regex",
                 "argv": "(\\d+)人\\*\\*"
             },
-            "count": 326,
+            "count": 328,
             "checked": true
         },
         {
@@ -2762,7 +2762,7 @@
                     1
                 ]
             },
-            "count": 425,
+            "count": 450,
             "checked": true
         },
         {
@@ -2777,7 +2777,7 @@
                     1
                 ]
             },
-            "count": 45,
+            "count": 0,
             "checked": true
         },
         {
@@ -2880,7 +2880,7 @@
                     1
                 ]
             },
-            "count": 95,
+            "count": 108,
             "checked": true
         },
         {
@@ -2906,7 +2906,7 @@
                     1
                 ]
             },
-            "count": 322,
+            "count": 336,
             "checked": true
         },
         {
@@ -2938,12 +2938,12 @@
                 "type": "regex",
                 "argv": "一共有【(\\d+)名"
             },
-            "count": 153,
+            "count": 173,
             "checked": true
         },
         {
             "index": 253,
-            "name": "「旺角勞工子弟學校」（現名為「創知中學」）舊生∕學生∕前教職員∕教職員反對修訂《逃犯條例》聯署聲明 ",
+            "name": "「旺角勞工子弟學校」（現名為「創知中學」）舊生∕學生∕前教職員∕教職員反對修訂《逃犯條例》聯署聲明",
             "url": "http://bit.ly/2VVxOiR",
             "parseConfig": {
                 "type": "regex",
@@ -2981,7 +2981,7 @@
                 "type": "regex",
                 "argv": "共(\\d+)人，依聯署時間先後排序"
             },
-            "count": 724,
+            "count": 753,
             "checked": true
         },
         {
@@ -3054,7 +3054,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 260,
+            "count": 279,
             "checked": true
         },
         {
@@ -3080,12 +3080,12 @@
                     1
                 ]
             },
-            "count": 87,
+            "count": 89,
             "checked": true
         },
         {
             "index": 265,
-            "name": "一群馬錦明慈善基金馬陳端喜紀念中學校友、學生或教職員就修訂《逃犯條例》之聯署聲明　",
+            "name": "一群馬錦明慈善基金馬陳端喜紀念中學校友、學生或教職員就修訂《逃犯條例》之聯署聲明",
             "url": "https://forms.gle/JMkqDH1EY6ingJv86",
             "parseConfig": {
                 "type": "count_in",
@@ -3095,7 +3095,7 @@
                     1
                 ]
             },
-            "count": 17,
+            "count": 0,
             "checked": true
         },
         {
@@ -3117,7 +3117,7 @@
                 "type": "regex",
                 "argv": "聯署人數[^\\n]+：(\\d+)"
             },
-            "count": 448,
+            "count": 450,
             "checked": true
         },
         {
@@ -3128,18 +3128,18 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 239,
+            "count": 240,
             "checked": true
         },
         {
             "index": 269,
-            "name": "香港管理專業協會李國寶中學校友及老師要求政府撤回《逃犯(修訂)條例草案》之聯署聲明 Petition against the Changes to the Fugitive Offenders Ordinance from alumni and teachers of HKMA David Li Kwok Po College ",
+            "name": "香港管理專業協會李國寶中學校友及老師要求政府撤回《逃犯(修訂)條例草案》之聯署聲明 Petition against the Changes to the Fugitive Offenders Ordinance from alumni and teachers of HKMA David Li Kwok Po College",
             "url": "http://bit.ly/2XeyZvg",
             "parseConfig": {
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 205,
+            "count": 217,
             "checked": true
         },
         {
@@ -3165,7 +3165,7 @@
                     1
                 ]
             },
-            "count": 108,
+            "count": 113,
             "checked": true
         },
         {
@@ -3197,7 +3197,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 279,
+            "count": 294,
             "checked": true
         },
         {
@@ -3208,7 +3208,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 875,
+            "count": 897,
             "checked": true
         },
         {
@@ -3230,7 +3230,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 393,
+            "count": 400,
             "checked": true
         },
         {
@@ -3245,7 +3245,7 @@
                     1
                 ]
             },
-            "count": 78,
+            "count": 74,
             "checked": true
         },
         {
@@ -3265,7 +3265,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 547,
+            "count": 551,
             "checked": true
         },
         {
@@ -3276,7 +3276,7 @@
                 "type": "regex",
                 "argv": "no. of participants in the petition = (\\d+)"
             },
-            "count": 1121,
+            "count": 0,
             "checked": true
         },
         {
@@ -3287,7 +3287,7 @@
                 "type": "regex",
                 "argv": "聯署人：(\\d+)人"
             },
-            "count": 522,
+            "count": 532,
             "checked": true
         },
         {
@@ -3302,7 +3302,7 @@
                     1
                 ]
             },
-            "count": 435,
+            "count": 438,
             "checked": true
         },
         {
@@ -3345,7 +3345,7 @@
                 "type": "regex",
                 "argv": "共(\\d+)名校友等聯署"
             },
-            "count": 146,
+            "count": 151,
             "checked": true
         },
         {
@@ -3375,7 +3375,7 @@
                     1
                 ]
             },
-            "count": 223,
+            "count": 234,
             "checked": true
         },
         {
@@ -3401,7 +3401,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 660,
+            "count": 696,
             "checked": true
         },
         {
@@ -3412,7 +3412,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 175,
+            "count": 189,
             "checked": true
         },
         {
@@ -3438,7 +3438,7 @@
                     1
                 ]
             },
-            "count": 345,
+            "count": 348,
             "checked": true
         },
         {
@@ -3464,7 +3464,7 @@
                 "type": "regex",
                 "argv": "共有(\\d+)人聯署"
             },
-            "count": 313,
+            "count": 327,
             "checked": true
         },
         {
@@ -3479,7 +3479,7 @@
                     1
                 ]
             },
-            "count": 236,
+            "count": 247,
             "checked": true
         },
         {
@@ -3490,7 +3490,7 @@
                 "type": "numbered",
                 "argv": "(\\d+)\\.\\s+[^\\n]*\\n"
             },
-            "count": 463,
+            "count": 472,
             "checked": true
         },
         {
@@ -3521,7 +3521,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 283,
+            "count": 305,
             "checked": true
         },
         {
@@ -3532,7 +3532,7 @@
                 "type": "regex",
                 "argv": "有(\\d+)人聯署"
             },
-            "count": 951,
+            "count": 976,
             "checked": true
         },
         {
@@ -3596,7 +3596,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 944,
+            "count": 953,
             "checked": true
         },
         {
@@ -3607,7 +3607,7 @@
                 "type": "numbered",
                 "argv": "(\\d+)\\s+[^\\n]*\\s+\\d{4}"
             },
-            "count": 114,
+            "count": 130,
             "checked": true
         },
         {
@@ -3628,7 +3628,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 313,
+            "count": 327,
             "checked": true
         },
         {
@@ -3688,7 +3688,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 102,
+            "count": 121,
             "checked": true
         },
         {
@@ -3699,7 +3699,7 @@
                 "type": "regex",
                 "argv": "，(\\d+)\\s+Co-signatories"
             },
-            "count": 417,
+            "count": 431,
             "checked": true
         },
         {
@@ -3754,7 +3754,7 @@
                 "type": "regex",
                 "argv": "聯署人： (\\d+)位"
             },
-            "count": 581,
+            "count": 592,
             "checked": true
         },
         {
@@ -3765,7 +3765,7 @@
                 "type": "numbered",
                 "argv": "(\\d+)\\.\\s+[^\\n]*\\s+\\d{4}"
             },
-            "count": 49,
+            "count": 50,
             "checked": true
         },
         {
@@ -3792,7 +3792,7 @@
                     1
                 ]
             },
-            "count": 213,
+            "count": 224,
             "checked": true
         },
         {
@@ -3803,7 +3803,7 @@
                 "type": "regex",
                 "argv": "共 ([\\d,]+) 人"
             },
-            "count": 1202,
+            "count": 1224,
             "checked": true
         },
         {
@@ -3835,7 +3835,7 @@
                     1
                 ]
             },
-            "count": 781,
+            "count": 785,
             "checked": true
         },
         {
@@ -3851,7 +3851,7 @@
                     1
                 ]
             },
-            "count": 199,
+            "count": 205,
             "checked": true
         },
         {
@@ -3889,7 +3889,7 @@
                 "type": "regex",
                 "argv": "共有(\\d+)人聯署"
             },
-            "count": 98,
+            "count": 99,
             "checked": true
         },
         {
@@ -3905,7 +3905,8 @@
                     1
                 ]
             },
-            "count": 105
+            "count": 105,
+            "checked": true
         },
         {
             "index": 333,
@@ -3930,7 +3931,7 @@
                     0
                 ]
             },
-            "count": 14,
+            "count": 0,
             "checked": true
         },
         {
@@ -3941,7 +3942,7 @@
                 "type": "regex",
                 "argv": "聯署人\\D+(\\d+)名"
             },
-            "count": 509,
+            "count": 519,
             "checked": true
         },
         {
@@ -3957,7 +3958,7 @@
                     1
                 ]
             },
-            "count": 87,
+            "count": 88,
             "checked": true
         },
         {
@@ -4000,7 +4001,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 285,
+            "count": 287,
             "checked": true
         },
         {
@@ -4065,7 +4066,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 291,
+            "count": 293,
             "checked": true
         },
         {
@@ -4144,7 +4145,7 @@
                 "type": "regex",
                 "argv": "【(\\d+)名聯署人】"
             },
-            "count": 162,
+            "count": 163,
             "checked": true
         },
         {
@@ -4155,7 +4156,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 86,
+            "count": 6,
             "checked": true
         },
         {
@@ -4177,7 +4178,7 @@
                 "type": "regex",
                 "argv": "已有 (\\d+) 人聯署"
             },
-            "count": 486,
+            "count": 492,
             "checked": true
         },
         {
@@ -4188,7 +4189,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 278,
+            "count": 285,
             "checked": true
         },
         {
@@ -4229,7 +4230,7 @@
                     1
                 ]
             },
-            "count": 83,
+            "count": 85,
             "checked": true
         },
         {
@@ -4245,12 +4246,12 @@
                     1
                 ]
             },
-            "count": 242,
+            "count": 243,
             "checked": true
         },
         {
             "index": 362,
-            "name": " 東華三院吳祥川紀念中學校友就要求撤回修訂《逃犯條例》之聯署聲明",
+            "name": "東華三院吳祥川紀念中學校友就要求撤回修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2KcVNaT",
             "parseConfig": {
                 "type": "count_in",
@@ -4261,7 +4262,7 @@
                     1
                 ]
             },
-            "count": 176,
+            "count": 180,
             "checked": true
         },
         {
@@ -4299,7 +4300,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 278,
+            "count": 285,
             "checked": true
         },
         {
@@ -4326,7 +4327,7 @@
                     0
                 ]
             },
-            "count": 8,
+            "count": 7,
             "checked": true
         },
         {
@@ -4347,7 +4348,7 @@
                 "type": "regex",
                 "argv": "聯署人數：(\\d+)"
             },
-            "count": 13,
+            "count": 62,
             "checked": true
         },
         {
@@ -4384,7 +4385,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 387,
+            "count": 410,
             "checked": true
         },
         {
@@ -4437,7 +4438,7 @@
                 "type": "regex",
                 "argv": "合共\\D*(\\d+)"
             },
-            "count": 295,
+            "count": 298,
             "checked": true
         },
         {
@@ -4475,7 +4476,7 @@
         },
         {
             "index": 381,
-            "name": "一群「播道人」對《逃犯條例》的關注、回應及信仰宣告 ",
+            "name": "一群「播道人」對《逃犯條例》的關注、回應及信仰宣告",
             "url": "https://bit.ly/2HCsflk",
             "parseConfig": {
                 "type": "regex",
@@ -4492,7 +4493,7 @@
                 "type": "regex",
                 "argv": "暫共\\D*(\\d+)"
             },
-            "count": 931,
+            "count": 936,
             "checked": true
         },
         {
@@ -4615,7 +4616,7 @@
                     0
                 ]
             },
-            "count": 423,
+            "count": 445,
             "checked": true
         },
         {
@@ -4626,7 +4627,7 @@
                 "type": "regex",
                 "argv": "已有\\D*(\\d+)"
             },
-            "count": 333,
+            "count": 340,
             "checked": true
         },
         {
@@ -4813,7 +4814,7 @@
                     0
                 ]
             },
-            "count": 103,
+            "count": 123,
             "checked": true
         },
         {
@@ -4834,7 +4835,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 342,
+            "count": 390,
             "checked": true
         },
         {
@@ -4870,7 +4871,7 @@
                 "type": "regex",
                 "argv": "一共有\\D*(\\d+)"
             },
-            "count": 81,
+            "count": 84,
             "checked": true
         },
         {
@@ -4891,7 +4892,7 @@
                 "type": "regex",
                 "argv": "\\D*(\\d+)人聯署"
             },
-            "count": 381,
+            "count": 393,
             "checked": true
         },
         {
@@ -4902,7 +4903,7 @@
                 "type": "regex",
                 "argv": "\\D*(\\d+)人聯署"
             },
-            "count": 127,
+            "count": 149,
             "checked": true
         },
         {
@@ -4918,7 +4919,7 @@
         },
         {
             "index": 420,
-            "name": "佛教黃允畋中學校友、學生、教師及前教職員反對修訂《逃犯條例》聯署聲明 ",
+            "name": "佛教黃允畋中學校友、學生、教師及前教職員反對修訂《逃犯條例》聯署聲明",
             "url": "https://forms.gle/Vywm1EowM62HSeDP8",
             "parseConfig": {
                 "type": "count_in",
@@ -4928,7 +4929,7 @@
                     1
                 ]
             },
-            "count": 73,
+            "count": 95,
             "checked": true
         },
         {
@@ -4943,7 +4944,7 @@
                     1
                 ]
             },
-            "count": 470,
+            "count": 499,
             "checked": true
         },
         {
@@ -4958,7 +4959,7 @@
                     1
                 ]
             },
-            "count": 30,
+            "count": 35,
             "checked": true
         },
         {
@@ -5160,7 +5161,7 @@
                     1
                 ]
             },
-            "count": 44,
+            "count": 58,
             "checked": true
         },
         {
@@ -5171,12 +5172,12 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 70,
+            "count": 118,
             "checked": true
         },
         {
             "index": 442,
-            "name": "一群台山商會中學學生及校友反對修訂《逃犯條例》之聯署聲明",
+            "name": "一群台山商會中學學生、教職員及校友反對修訂《逃犯條例》之聯署聲明",
             "url": "http://bit.ly/2KfGu1f",
             "parseConfig": {
                 "type": "count_in",
@@ -5187,7 +5188,7 @@
                     0
                 ]
             },
-            "count": 38,
+            "count": 41,
             "checked": true
         },
         {
@@ -5235,7 +5236,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 152,
+            "count": 154,
             "checked": true
         },
         {
@@ -5250,7 +5251,7 @@
                     1
                 ]
             },
-            "count": 40,
+            "count": 70,
             "checked": true
         },
         {
@@ -5293,7 +5294,7 @@
                 "type": "regex",
                 "argv": "目前已收取聯署數：\\D*(\\d+)"
             },
-            "count": 60,
+            "count": 85,
             "checked": true
         },
         {
@@ -5314,7 +5315,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 47,
+            "count": 52,
             "checked": true
         },
         {
@@ -5340,6 +5341,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-02 00:14:21"
+        "updated_at": "2019-06-02 09:44:05"
     }
 }
