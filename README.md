@@ -13,6 +13,9 @@ node cli.js gen_list
 # Try to get the count from the html
 node cli.js parse -c
 
+# Get the stats 
+node cli.js parse -s
+
 ```
 
 ## Contribution
