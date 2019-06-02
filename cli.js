@@ -155,12 +155,49 @@ function getCountFunc(index, isLocal, isDebug) {
   })
 }
 
+/**
+ * Get the stats of the list.json
+ */
+function getStatsFunc(length) {
+  let cnt = 0; 
+  let numberOfSigns = 0;
+  let checked = 0;
+  let countButNotChecked = [];
+  return async.asyncify(async (item, key) => {
+    try {
+      cnt++;
+      numberOfSigns += (item.count != null && item.count ? item.count : 0);
+      checked += (item.checked != null && item.checked == true ? 1 : 0);
+
+      if(item.count != null && (item.checked == null || item.checked == false)) {
+        countButNotChecked.push(item.index)
+      }
+      
+
+      if(cnt == length) {
+        console.log({
+          cnt,
+          numberOfSigns,
+          checked,
+          countButNotChecked: {
+            count: countButNotChecked.length,
+            index: countButNotChecked
+          }
+        });
+      }
+    } catch (error) {
+      console.error(error.message);
+    }
+  })
+}
+
 program
   .command('parse')
   .option('-d, --download-only', 'Download all the html only')
   .option('-l, --local', 'parse the data from local')
   .option('-c, --count', 'display the number (if any)')
   .option('-i, --index <index>', 'run the index only')
+  .option('-s, --stats', 'display the stats')
   .option('--debug', 'output the debug messages')
   .action(async (cmd) => {
 
@@ -182,6 +219,10 @@ program
     } else if (cmd.count) {
       async.eachOfLimit(list, 20, getCountFunc(cmd.index, cmd.local, cmd.debug), (error) => {
         fs.writeFileSync('./data/list.json', JSON.stringify({ list: list, meta: { updated_at: moment().tz('Asia/Hong_Kong').format('YYYY-MM-DD HH:mm:ss') } }, null, 4));
+      })
+    } else if (cmd.stats) {
+      async.eachOfLimit(list, 20, getStatsFunc(list.length), (error) => {
+        console.log(error);
       })
     }
 

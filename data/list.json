@@ -1312,7 +1312,7 @@
                 "type": "regex",
                 "argv": "聯署人數([\\d,]+)人"
             },
-            "count": 1214,
+            "count": 1220,
             "checked": true
         },
         {
@@ -2215,7 +2215,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 842,
+            "count": 839,
             "checked": true
         },
         {
@@ -2311,7 +2311,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 1211,
+            "count": 1218,
             "checked": true
         },
         {
@@ -2359,7 +2359,7 @@
                 "type": "regex",
                 "argv": "聯署名單[^\\n]+：(\\d+)人"
             },
-            "count": 712,
+            "count": 724,
             "checked": true
         },
         {
@@ -2489,13 +2489,13 @@
         },
         {
             "index": 216,
-            "name": "馬鞍山曾璧山中學學生、校友及教職員反對修訂《逃犯條例》聯署聲明",
+            "name": "一群曾璧山中學校友反對修訂《逃犯條例》聯署聲明",
             "url": "https://forms.gle/fmGwuUG6fF2shFcR9",
             "parseConfig": {
                 "type": "regex",
                 "argv": "聯署人及畢業年份[^\\n]+，(\\d+)人"
             },
-            "count": 88,
+            "count": 108,
             "checked": true
         },
         {
@@ -3002,7 +3002,7 @@
                 "type": "regex",
                 "argv": "人數\\D*(\\d+)"
             },
-            "count": 226,
+            "count": 230,
             "checked": true
         },
         {
@@ -3302,7 +3302,7 @@
                     1
                 ]
             },
-            "count": 438,
+            "count": 442,
             "checked": true
         },
         {
@@ -3803,7 +3803,7 @@
                 "type": "regex",
                 "argv": "共 ([\\d,]+) 人"
             },
-            "count": 1224,
+            "count": 1233,
             "checked": true
         },
         {
@@ -4134,7 +4134,7 @@
                     1
                 ]
             },
-            "count": 38,
+            "count": 39,
             "checked": true
         },
         {
@@ -4427,7 +4427,7 @@
                 "type": "numbered",
                 "argv": "(\\d+)[\\t]+[^\\n]+\\n"
             },
-            "count": 2142,
+            "count": 2163,
             "checked": true
         },
         {
@@ -4501,7 +4501,7 @@
             "name": "香港社會工作者總工會 (HKSWGU)",
             "url": "https://www.facebook.com/HKSocialWorkersGeneralUnion/?__tn__=%2CdK%2AF-R&eid=ARBWSYcLMk88Q77L8jzzy4V_7NUPRmlI7IcFM-IamADr9ThZH28_bcf8vzvorD1G-w8fpH0KAvb1rE7D",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4511,7 +4511,7 @@
             "name": "社工復興運動 Reclaiming Social Work Movement",
             "url": "https://www.facebook.com/rswmhk/?__tn__=%2CdK%2AF-R&eid=ARBpTuSXTE_rZ4w1-Yue2dxhf2doRsa3-IPOPV6d3TvtzGc41MkMhF9Ytg7kOHetSv0d89z-g_jOSqgz",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4583,10 +4583,15 @@
             "name": "樹藝及綠化相關行業反對修訂《逃犯條例》聯署聲明",
             "url": "https://forms.gle/srATW89N6Ya6NePP6?fbclid=IwAR3B2tcv5Mrgts2_1pFYNqPlhic0OjPNXZVlchyXZJQEH1Kadx3HOBO059w",
             "parseConfig": {
-                "type": "regex",
-                "argv": "人數\\D*(\\d+)"
+                "type": "count_in",
+                "argv": [
+                    "聯署名單.*\\n([^\"]*)\">",
+                    "[^：\\n]+\\n",
+                    1
+                ]
             },
-            "count": 0
+            "count": 71,
+            "checked": true
         },
         {
             "index": 392,
@@ -4675,7 +4680,7 @@
             "name": " Les Corner 女角平權協作組",
             "url": "https://www.facebook.com/lescorner2015/?__tn__=K-R-R&eid=ARC4C3tiNXa6C3R2MXbk5dAVCK22K1MtHWk4XALvH6GYzviKsm_sqmPQ1mR__FdvOJ6U9bRE9qz5PYww&fref=mentions&__xts__%5B0%5D=68.ARB0nP2UD2s2Wbqt1Kw07DdLdaNnCZ0Qhr5NyTpYT75xmMOyNONaPJvNZ1qZxRE1mA53ZIzYoxiNP9rwKVXgqL4pCcsT7f73LlmWkcnoAQwx1Twg8KQ06Ns0oljTmZ1aSKljIQ1u42QUtfY0Ho8bXZRhY3h21pAu0boMFcqdHBVsFkRRhbmnJM5JkF1oPn50qumu9b6aKMNgY9d_Z-LZtfKTgEd8qqKKHizBAZbSNU1tL3EvDyQDVPFNMGdQ39YCkGt8H8RoR6E4ifpuA6McdePutU7hn3SPdAnvpbOhjdkCp6R1U7A6knn7I1yb14C0yRzZ",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4685,7 +4690,7 @@
             "name": " 跨性別權益會",
             "url": "https://www.facebook.com/%E8%B7%A8%E6%80%A7%E5%88%A5%E6%AC%8A%E7%9B%8A%E6%9C%83-1528586417203813/?__tn__=K-R-R&eid=ARD7AdPt9mkAEkNri2rAZeYaDGlD-KJOSOcVSQdLK42BH4UvbEocsw4v_jIU1x2viXTi1jEF4nEGBqsJ&fref=mentions&__xts__%5B0%5D=68.ARB0nP2UD2s2Wbqt1Kw07DdLdaNnCZ0Qhr5NyTpYT75xmMOyNONaPJvNZ1qZxRE1mA53ZIzYoxiNP9rwKVXgqL4pCcsT7f73LlmWkcnoAQwx1Twg8KQ06Ns0oljTmZ1aSKljIQ1u42QUtfY0Ho8bXZRhY3h21pAu0boMFcqdHBVsFkRRhbmnJM5JkF1oPn50qumu9b6aKMNgY9d_Z-LZtfKTgEd8qqKKHizBAZbSNU1tL3EvDyQDVPFNMGdQ39YCkGt8H8RoR6E4ifpuA6McdePutU7hn3SPdAnvpbOhjdkCp6R1U7A6knn7I1yb14C0yRzZ",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -4695,7 +4700,7 @@
             "name": " Made In Gender",
             "url": "https://www.facebook.com/madeingender/?__tn__=K-R-R&eid=ARCvQTqnMDQeLYuB7P2tDV0ZNTDiQ9Eal8tP1RLJzfLLbOPjbdl5pPoDYZddm9fdA_XtpBURLP0fxX4Q&fref=mentions&__xts__%5B0%5D=68.ARB0nP2UD2s2Wbqt1Kw07DdLdaNnCZ0Qhr5NyTpYT75xmMOyNONaPJvNZ1qZxRE1mA53ZIzYoxiNP9rwKVXgqL4pCcsT7f73LlmWkcnoAQwx1Twg8KQ06Ns0oljTmZ1aSKljIQ1u42QUtfY0Ho8bXZRhY3h21pAu0boMFcqdHBVsFkRRhbmnJM5JkF1oPn50qumu9b6aKMNgY9d_Z-LZtfKTgEd8qqKKHizBAZbSNU1tL3EvDyQDVPFNMGdQ39YCkGt8H8RoR6E4ifpuA6McdePutU7hn3SPdAnvpbOhjdkCp6R1U7A6knn7I1yb14C0yRzZ",
             "parseConfig": {
-                "type": "regex",
+                "type": "unknown",
                 "argv": "人數\\D*(\\d+)"
             },
             "count": 0
@@ -5161,7 +5166,7 @@
                     1
                 ]
             },
-            "count": 58,
+            "count": 59,
             "checked": true
         },
         {
@@ -5341,6 +5346,6 @@
         }
     ],
     "meta": {
-        "updated_at": "2019-06-02 09:44:05"
+        "updated_at": "2019-06-02 10:59:59"
     }
 }
